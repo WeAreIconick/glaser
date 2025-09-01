@@ -90,7 +90,8 @@
 					"name": "Inter",
 					"slug": "inter"
 				}
-			]
+			],
+			"fontSizes": []
 		},
 		"useRootPaddingAwareAlignments": true
 	},
@@ -98,8 +99,8 @@
 		"elements": {
 			"button": {
 				"color": {
-					"background": "var(--wp--preset--color--white)",
-					"text": "var(--wp--preset--color--black)"
+					"background": "var(--wp--preset--color--background)",
+					"text": "var(--wp--preset--color--primary)"
 				},
 				"typography": {
 					"fontFamily": "var(--wp--preset--font-family--unbounded)"
@@ -112,7 +113,7 @@
 			},
 			"link": {
 				"color": {
-					"text": "var(--wp--preset--color--black)"
+					"text": "var(--wp--preset--color--primary)"
 				}
 			}
 		},
