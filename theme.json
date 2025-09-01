@@ -3,11 +3,37 @@
 	"settings": {
 		"appearanceTools": true,
 		"layout": {
-			"contentSize": "620px",
-			"wideSize": "1000px"
+			"contentSize": "810px",
+			"wideSize": "1440px"
+		},
+		"color": {
+			"defaultDuotone": false,
+			"defaultGradients": false,
+			"defaultPalette": false,
+			"palette": [
+				{
+					"color": "#ffffff",
+					"name": "Background",
+					"slug": "background"
+				},
+				{
+					"color": "#000000",
+					"name": "Primary",
+					"slug": "primary"
+				},
+				{
+					"color": "#000000",
+					"name": "Borders",
+					"slug": "borders"
+				}
+			]
 		},
 		"spacing": {
-			"units": [ "%", "px", "rem" ]
+			"units": [
+				"%",
+				"px",
+				"rem"
+			]
 		},
 		"typography": {
 			"fontFamilies": [
