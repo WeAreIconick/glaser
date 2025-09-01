@@ -1,8 +1,8 @@
 {
-	"name": "georgestephanis/theme-repo-template",
+	"name": "georgestephanis/glaser",
 	"type": "wordpress-theme",
-	"description": "A starter theme for FSE.  Will generally be overwritten.",
-	"homepage": "https://github.com/georgestephanis/theme-repo-template",
+	"description": "Another Iconick Theme for WordPress",
+	"homepage": "https://github.com/georgestephanis/glaser",
 	"license": "GPL-2.0-or-later",
 	"repositories": [
 		{

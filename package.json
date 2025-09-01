@@ -1,7 +1,7 @@
 {
-    "name": "theme-repo-template",
+    "name": "glaser",
     "version": "1.0.0",
-    "description": "A starter theme for FSE.  Will generally be overwritten.",
+    "description": "Another Iconick Theme for WordPress",
     "author": {
         "name": "George Stephanis",
         "url": "https://georgestephanis.wordpress.com"
@@ -12,9 +12,9 @@
         "theme"
     ],
     "prettier": "@wordpress/prettier-config",
-    "homepage": "https://github.com/georgestephanis/theme-repo-template",
-    "repository": "https://github.com/georgestephanis/theme-repo-template",
-    "bugs": "https://github.com/georgestephanis/theme-repo-template/issues",
+    "homepage": "https://github.com/georgestephanis/glaser",
+    "repository": "https://github.com/georgestephanis/glaser",
+    "bugs": "https://github.com/georgestephanis/glaser/issues",
     "private": false,
     "engines": {
         "node": ">=20.0",
