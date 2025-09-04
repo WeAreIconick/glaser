@@ -12,9 +12,9 @@
         "theme"
     ],
     "prettier": "@wordpress/prettier-config",
-    "homepage": "https://github.com/georgestephanis/glaser",
-    "repository": "https://github.com/georgestephanis/glaser",
-    "bugs": "https://github.com/georgestephanis/glaser/issues",
+    "homepage": "https://github.com/IconickThemes/glaser",
+    "repository": "https://github.com/IconickThemes/glaser",
+    "bugs": "https://github.com/IconickThemes/glaser/issues",
     "private": false,
     "engines": {
         "node": ">=20.0",

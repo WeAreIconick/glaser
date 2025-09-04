@@ -87,7 +87,7 @@ function get_starter_content() {
 					'link_email',
 					'link_github' => array(
 						'title' => esc_html_x( 'Glaser', 'Theme starter content', 'glaser' ),
-						'url'   => 'https://github.com/georgestephanis/glaser/',
+						'url'   => 'https://github.com/IconickThemes/glaser/',
 					),
 				),
 			),
