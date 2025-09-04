@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*!
 Theme Name:   Glaser
 Theme URI:    https://github.com/georgestephanis/glaser
@@ -14,6 +15,28 @@ header.wp-block-template-part,
 footer.wp-block-template-part {
   padding-left: 1rem;
   padding-right: 1rem;
+}
+
+.wp-block-buttons .wp-block-button {
+  /** Arrow button styles.  Add in strong tags inside the button. */
+}
+.wp-block-buttons .wp-block-button.is-style-arrow-button a strong, .wp-block-buttons .wp-block-button.is-style-arrow-button .block-editor-rich-text__editable strong {
+  transition: margin 0.3s ease-in-out;
+}
+.wp-block-buttons .wp-block-button.is-style-arrow-button a::after, .wp-block-buttons .wp-block-button.is-style-arrow-button .block-editor-rich-text__editable::after {
+  content: "→";
+  display: inline-block;
+  font-size: inherit;
+  margin-left: 1rem;
+  transform: rotate(-45deg);
+  transition: transform 0.3s ease-in-out;
+}
+.wp-block-buttons .wp-block-button.is-style-arrow-button a:hover strong, .wp-block-buttons .wp-block-button.is-style-arrow-button .block-editor-rich-text__editable:hover strong {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+.wp-block-buttons .wp-block-button.is-style-arrow-button a:hover::after, .wp-block-buttons .wp-block-button.is-style-arrow-button .block-editor-rich-text__editable:hover::after {
+  transform: rotate(0);
 }
 
 /*# sourceMappingURL=style.css.map */

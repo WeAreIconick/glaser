@@ -1,0 +1,28 @@
+.wp-block-buttons {
+    .wp-block-button {
+        /** Arrow button styles.  Add in strong tags inside the button. */
+        &.is-style-arrow-button a,
+        &.is-style-arrow-button .block-editor-rich-text__editable {
+            strong {
+                transition: margin 0.3s ease-in-out;
+            }
+            &::after {
+                content: "→";
+                display: inline-block;
+                font-size: inherit;
+                margin-left: 1rem;
+                transform: rotate(-45deg);
+                transition: transform 0.3s ease-in-out;
+            }
+            &:hover {
+                strong {
+                    margin-left: 1rem;
+                    margin-right: 1rem;
+                }
+                &::after {
+                    transform: rotate(0);
+                }
+            }
+        }
+    }
+}
