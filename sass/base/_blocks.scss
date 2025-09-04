@@ -1,28 +1,66 @@
+
+.wp-block-navigation__responsive-container.is-menu-open {
+	--wp--style--global--wide-size: calc( 100% - 6rem );
+
+	.wp-block-navigation__responsive-container-close {
+		svg {
+			width: 48px;
+			height: 48px;
+		}
+	}
+	.wp-block-navigation__responsive-container-content {
+		ul.wp-block-navigation__container {
+			display: block;
+			width: 100%;
+
+			> li.wp-block-navigation-item {
+				font-family: var(--wp--preset--font-family--unbounded);
+				font-size: var(--wp--preset--font-size--xx-large);
+				text-transform: uppercase;
+				display: list-item;
+				list-style-type: decimal-leading-zero;
+				list-style-position: inside;
+
+				&::marker {
+					font-family: var(--wp--preset--font-family--inter);
+					font-size: var(--wp--preset--font-size--large);
+				}
+				a span {
+					transition: padding 0.3s ease-in-out;
+				}
+				a:hover span {
+					padding-left: 1rem;
+				}
+			}
+		}
+	}
+}
+
 .wp-block-buttons {
-    .wp-block-button {
-        /** Arrow button styles.  Add in strong tags inside the button. */
-        &.is-style-arrow-button a,
-        &.is-style-arrow-button .block-editor-rich-text__editable {
-            strong {
-                transition: margin 0.3s ease-in-out;
-            }
-            &::after {
-                content: "→";
-                display: inline-block;
-                font-size: inherit;
-                margin-left: 1rem;
-                transform: rotate(-45deg);
-                transition: transform 0.3s ease-in-out;
-            }
-            &:hover {
-                strong {
-                    margin-left: 1rem;
-                    margin-right: 1rem;
-                }
-                &::after {
-                    transform: rotate(0);
-                }
-            }
-        }
-    }
+	.wp-block-button {
+		/** Arrow button styles.  Add in strong tags inside the button. */
+		&.is-style-arrow-button a,
+		&.is-style-arrow-button .block-editor-rich-text__editable {
+			strong {
+				transition: margin 0.3s ease-in-out;
+			}
+			&::after {
+				content: "→";
+				display: inline-block;
+				font-size: inherit;
+				margin-left: 1rem;
+				transform: rotate(-45deg);
+				transition: transform 0.3s ease-in-out;
+			}
+			&:hover {
+				strong {
+					margin-left: 1rem;
+					margin-right: 1rem;
+				}
+				&::after {
+					transform: rotate(0);
+				}
+			}
+		}
+	}
 }
