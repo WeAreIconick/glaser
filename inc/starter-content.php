@@ -106,6 +106,11 @@ function get_starter_content() {
 				'name'  => esc_html__( 'Footer Pages Menu', 'glaser' ),
 				'items' => array(
 					'link_home',
+					'page_sample' => array(
+						'type' => 'post_type',
+						'object' => 'page',
+						'object_id' => '{{sample}}'
+					),
 					'link_github' => array(
 						'title' => esc_html_x( 'Glaser', 'Theme starter content', 'glaser' ),
 						'url'   => 'https://github.com/IconickThemes/glaser/',
@@ -117,6 +122,7 @@ function get_starter_content() {
 				'items' => array(
 					'page_services' => array(
 						'type' => 'post_type',
+						'object' => 'page',
 						'object_id' => '{{services}}'
 					),
 					'page_about',
@@ -126,15 +132,27 @@ function get_starter_content() {
 			'footer-information'  => array(
 				'name'  => esc_html__( 'Footer Information Menu', 'glaser' ),
 				'items' => array(
-					'page_terms',
+					'page_terms' => array(
+						'type' => 'post_type',
+						'object' => 'page',
+						'object_id' => '{{terms}}'
+					),
 					'page_blog',
 				),
 			),
 			'footer-support'  => array(
 				'name'  => esc_html__( 'Footer Support Menu', 'glaser' ),
 				'items' => array(
-					'page_services',
-					'page_pricing',
+					'page_services' => array(
+						'type' => 'post_type',
+						'object' => 'page',
+						'object_id' => '{{services}}'
+					),
+					'page_pricing' => array(
+						'type' => 'post_type',
+						'object' => 'page',
+						'object_id' => '{{pricing}}'
+					),
 					'link_github' => array(
 						'title' => esc_html_x( 'Glaser Theme', 'Theme starter content', 'glaser' ),
 						'url'   => 'https://github.com/IconickThemes/glaser/',
