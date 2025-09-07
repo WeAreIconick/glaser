@@ -115,7 +115,10 @@ function get_starter_content() {
 			'footer-product'  => array(
 				'name'  => esc_html__( 'Footer Product Menu', 'glaser' ),
 				'items' => array(
-					'page_services',
+					'page_services' => array(
+						'type' => 'post_type',
+						'object_id' => '{{services}}'
+					),
 					'page_about',
 					'page_contact',
 				),
