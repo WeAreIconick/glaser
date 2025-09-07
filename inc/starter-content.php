@@ -56,7 +56,7 @@ function get_starter_content() {
 			),
 			'terms' => array(
 				'post_type' => 'page',
-				'post_title' => esc_html_x( 'Terms & Conditions', 'Theme starter content', 'glaser' ),
+				'post_title' => esc_html_x( 'Terms and Conditions', 'Theme starter content', 'glaser' ),
 			),
 			'works' => array(
 				'post_type' => 'page',
