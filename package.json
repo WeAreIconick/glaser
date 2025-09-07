@@ -20,7 +20,7 @@
         "**",
         "!.*",
         "!.git/**",
-        "!*.zip"
+        "!_playground/glaser.zip"
     ],
     "engines": {
         "node": ">=20.0",
