@@ -16,6 +16,12 @@
     "repository": "https://github.com/IconickThemes/glaser",
     "bugs": "https://github.com/IconickThemes/glaser/issues",
     "private": false,
+    "files": [
+        "**",
+        "!.*",
+        "!.git/**",
+        "!*.zip"
+    ],
     "engines": {
         "node": ">=20.0",
         "npm": ">=10.0"
@@ -41,6 +47,6 @@
         "start": "npm-run-all --parallel \"start:*\"",
         "start:js": "wp-scripts start --blocks-manifest",
         "start:scss": "sass --watch sass/style.scss:style.css --style=expanded --source-map",
-        "theme-zip": "wp-scripts plugin-zip"
+        "theme-zip": "wp-scripts plugin-zip && mv glaser.zip _playground/glaser.zip"
     }
 }
