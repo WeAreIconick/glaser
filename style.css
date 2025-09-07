@@ -39,6 +39,9 @@ Requires PHP: 8.2
   font-family: var(--wp--preset--font-family--inter);
   font-size: var(--wp--preset--font-size--large);
 }
+.wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__responsive-container-content ul.wp-block-navigation__container > li.wp-block-navigation-item a {
+  display: inline-block;
+}
 .wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__responsive-container-content ul.wp-block-navigation__container > li.wp-block-navigation-item a span {
   transition: padding 0.3s ease-in-out;
 }
