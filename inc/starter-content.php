@@ -102,7 +102,7 @@ function get_starter_content() {
 			),
 
 			// Assign a menu to the "footer" location.
-			'footer_pages'  => array(
+			'footer-pages'  => array(
 				'name'  => esc_html__( 'Footer Pages Menu', 'glaser' ),
 				'items' => array(
 					'link_home',
@@ -112,7 +112,7 @@ function get_starter_content() {
 					),
 				),
 			),
-			'footer_product'  => array(
+			'footer-product'  => array(
 				'name'  => esc_html__( 'Footer Product Menu', 'glaser' ),
 				'items' => array(
 					'page_services',
@@ -120,14 +120,14 @@ function get_starter_content() {
 					'page_contact',
 				),
 			),
-			'footer_information'  => array(
+			'footer-information'  => array(
 				'name'  => esc_html__( 'Footer Information Menu', 'glaser' ),
 				'items' => array(
 					'page_terms',
 					'page_blog',
 				),
 			),
-			'footer_support'  => array(
+			'footer-support'  => array(
 				'name'  => esc_html__( 'Footer Support Menu', 'glaser' ),
 				'items' => array(
 					'page_services',
