@@ -46,6 +46,26 @@ function get_starter_content() {
 			'contact',
 			'blog',
 			'news',
+			'services' => array(
+				'post_type' => 'page',
+				'post_title' => esc_html_x( 'Services', 'Theme starter content', 'glaser' ),
+			),
+			'pricing' => array(
+				'post_type' => 'page',
+				'post_title' => esc_html_x( 'Pricing', 'Theme starter content', 'glaser' ),
+			),
+			'terms' => array(
+				'post_type' => 'page',
+				'post_title' => esc_html_x( 'Terms & Conditions', 'Theme starter content', 'glaser' ),
+			),
+			'works' => array(
+				'post_type' => 'page',
+				'post_title' => esc_html_x( 'Our Works', 'Theme starter content', 'glaser' ),
+			),
+			'sample' => array(
+				'post_type' => 'page',
+				'post_title' => esc_html_x( 'Sample Page', 'Theme starter content', 'glaser' ),
+			),
 		),
 
 		'attachments' => array(
@@ -62,7 +82,7 @@ function get_starter_content() {
 			'page_for_posts'  => '{{blog}}',
 			'site_icon'       => '{{wapuu}}',
 			'blogname'        => esc_html_x( 'Glaser', 'Theme starter content', 'glaser' ),
-			'blogdescription' => esc_html_x( 'Another fine WordPress Block Theme', 'Theme starter content', 'glaser' ),
+			'blogdescription' => esc_html_x( 'Another fine Iconick Theme', 'Theme starter content', 'glaser' ),
 		),
 
 		// Set up nav menus for each of the two areas registered in the theme.
@@ -72,21 +92,48 @@ function get_starter_content() {
 				'name'  => esc_html_x( 'Primary menu', 'Theme starter content', 'glaser' ),
 				'items' => array(
 					'link_home', // Note that the core "home" page is actually a link in case a static front page is not used.
+					'page_services',
+					'page_works',
 					'page_about',
-					'page_blog',
+					'page_pricing',
 					'page_contact',
+					'page_blog',
 				),
 			),
 
 			// Assign a menu to the "footer" location.
-			'footer'  => array(
-				'name'  => esc_html__( 'Footer menu', 'glaser' ),
+			'footer_pages'  => array(
+				'name'  => esc_html__( 'Footer Pages Menu', 'glaser' ),
 				'items' => array(
 					'link_home',
-					'link_news',
-					'link_email',
 					'link_github' => array(
 						'title' => esc_html_x( 'Glaser', 'Theme starter content', 'glaser' ),
+						'url'   => 'https://github.com/IconickThemes/glaser/',
+					),
+				),
+			),
+			'footer_product'  => array(
+				'name'  => esc_html__( 'Footer Product Menu', 'glaser' ),
+				'items' => array(
+					'page_services',
+					'page_about',
+					'page_contact',
+				),
+			),
+			'footer_information'  => array(
+				'name'  => esc_html__( 'Footer Information Menu', 'glaser' ),
+				'items' => array(
+					'page_terms',
+					'page_blog',
+				),
+			),
+			'footer_support'  => array(
+				'name'  => esc_html__( 'Footer Support Menu', 'glaser' ),
+				'items' => array(
+					'page_services',
+					'page_pricing',
+					'link_github' => array(
+						'title' => esc_html_x( 'Glaser Theme', 'Theme starter content', 'glaser' ),
 						'url'   => 'https://github.com/IconickThemes/glaser/',
 					),
 				),
@@ -99,5 +146,5 @@ function get_starter_content() {
 	 *
 	 * @param array $starter_content Array of starter content.
 	 */
-	return apply_filters( 'gtheme_starter_content', $starter_content );
+	return apply_filters( 'glaser_starter_content', $starter_content );
 }
