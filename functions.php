@@ -51,3 +51,13 @@ function enqueue_block_editor_assets() {
 	);
 }
 \add_action( 'enqueue_block_editor_assets', __NAMESPACE__ . '\enqueue_block_editor_assets' );
+
+/**
+ * Initialize blocks.
+ *
+ * @return void
+ */
+function blocks_init() {
+	\wp_register_block_types_from_metadata_collection( __DIR__ . '/build', __DIR__ . '/build/blocks-manifest.php' );
+}
+\add_action( 'init', __NAMESPACE__ . '\blocks_init' );

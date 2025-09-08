@@ -1,0 +1,1 @@
+@keyframes spin{to{transform:rotate(1turn)}}.wp-block-glaser-badge{animation:spin 60s linear infinite;aspect-ratio:1;border-radius:50%;box-sizing:border-box;pointer-events:none}.wp-block-glaser-badge svg{aspect-ratio:1;inset:0;transform-origin:center center;width:100%;will-change:transform}.wp-block-glaser-badge svg text textpath{fill:var(--wp--preset--color--primary,#000)}

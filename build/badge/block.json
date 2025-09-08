@@ -1,0 +1,82 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "glaser/badge",
+  "version": "0.1.0",
+  "title": "Badge",
+  "category": "theme",
+  "icon": "info-outline",
+  "description": "An animated SVG badge with customized text.",
+  "example": {},
+  "supports": {
+    "html": false,
+    "typography": {
+      "fontSize": true,
+      "__experimentalFontFamily": true,
+      "__experimentalFontWeight": true,
+      "__experimentalLetterSpacing": true,
+      "__experimentalTextTransform": true,
+      "__experimentalDefaultControls": {
+        "fontSize": true
+      }
+    },
+    "spacing": {
+      "margin": true,
+      "padding": true
+    },
+    "__experimentalBorder": {
+      "color": true,
+      "style": true,
+      "width": true
+    },
+    "dimensions": {
+      "aspectRatio": false
+    },
+    "color": {
+      "text": true
+    },
+    "align": true
+  },
+  "attributes": {
+    "label": {
+      "type": "string",
+      "default": "Testing A Badge"
+    },
+    "qty": {
+      "type": "number",
+      "default": 2
+    },
+    "spacer": {
+      "type": "string",
+      "default": "·"
+    },
+    "style": {
+      "type": "object",
+      "default": {
+        "typography": {
+          "textTransform": "uppercase",
+          "letterSpacing": "3px",
+          "fontSize": "0.6rem",
+          "fontWeight": "400",
+          "fontStyle": "normal"
+        },
+        "border": {
+          "width": "2px"
+        },
+        "spacing": {
+          "padding": {
+            "top": "var:preset|spacing|30",
+            "bottom": "var:preset|spacing|30",
+            "left": "var:preset|spacing|30",
+            "right": "var:preset|spacing|30"
+          }
+        }
+      }
+    }
+  },
+  "textdomain": "glaser",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "viewScript": "file:./view.js"
+}
