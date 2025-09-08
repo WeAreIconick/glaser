@@ -55,6 +55,10 @@ return array(
 				'type' => 'string',
 				'default' => '·'
 			),
+			'width' => array(
+				'type' => 'string',
+				'default' => '100px'
+			),
 			'style' => array(
 				'type' => 'object',
 				'default' => array(

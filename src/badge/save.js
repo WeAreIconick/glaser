@@ -1,9 +1,15 @@
-import { useBlockProps, useBlockEditContext } from '@wordpress/block-editor';
+import { useBlockProps, getSpacingPresetCssVar } from '@wordpress/block-editor';
 
 export default function save({ attributes }) {
-	const { label, qty, spacer } = attributes;
+	const { label, qty, spacer, width } = attributes;
 	return (
-		<figure {...useBlockProps.save()}>
+		<figure
+			{...useBlockProps.save({
+				style: {
+					width: getSpacingPresetCssVar(width),
+				},
+			})}
+		>
 			<svg
 				className="transform-origin-center-center"
 				viewBox="0 0 100 100"

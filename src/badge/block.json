@@ -50,6 +50,10 @@
 			"type": "string",
 			"default": "·"
 		},
+		"width": {
+			"type": "string",
+			"default": "100px"
+		},
 		"style": {
 			"type": "object",
 			"default": {
