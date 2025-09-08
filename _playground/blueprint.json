@@ -20,6 +20,16 @@
 			}
 		},
 		{
+			"step": "installPlugin",
+			"pluginData": {
+				"resource": "wordpress.org/plugins",
+				"slug": "safe-svg"
+			},
+			"options": {
+				"activate": true
+			}
+		},
+		{
 			"step": "installTheme",
 			"themeData": {
 				"resource": "url",
