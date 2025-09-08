@@ -73,6 +73,38 @@ function get_starter_content() {
 				'post_title' => esc_html_x( 'Wapuu', 'Theme starter content', 'glaser' ),
 				'file'       => '_playground/wapuu.png',
 			),
+			'logo-1' => array(
+				'post_title' => esc_html_x( 'Logo 1', 'Theme starter content', 'glaser' ),
+				'file'       => '_playground/assets/logo-1.svg'
+			),
+			'logo-2' => array(
+				'post_title' => esc_html_x( 'Logo 2', 'Theme starter content', 'glaser' ),
+				'file'       => '_playground/assets/logo-2.svg'
+			),
+			'logo-3' => array(
+				'post_title' => esc_html_x( 'Logo 3', 'Theme starter content', 'glaser' ),
+				'file'       => '_playground/assets/logo-3.svg'
+			),
+			'logo-4' => array(
+				'post_title' => esc_html_x( 'Logo 4', 'Theme starter content', 'glaser' ),
+				'file'       => '_playground/assets/logo-4.svg'
+			),
+			'logo-5' => array(
+				'post_title' => esc_html_x( 'Logo 5', 'Theme starter content', 'glaser' ),
+				'file'       => '_playground/assets/logo-5.svg'
+			),
+			'logo-6' => array(
+				'post_title' => esc_html_x( 'Logo 6', 'Theme starter content', 'glaser' ),
+				'file'       => '_playground/assets/logo-6.svg'
+			),
+			'logo-7' => array(
+				'post_title' => esc_html_x( 'Logo 7', 'Theme starter content', 'glaser' ),
+				'file'       => '_playground/assets/logo-7.svg'
+			),
+			'logo-8' => array(
+				'post_title' => esc_html_x( 'Logo 8', 'Theme starter content', 'glaser' ),
+				'file'       => '_playground/assets/logo-8.svg'
+			)
 		),
 
 		// Default to a static front page and assign the front and posts pages.
