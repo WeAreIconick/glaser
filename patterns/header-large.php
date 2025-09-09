@@ -51,8 +51,8 @@
 <!-- /wp:group -->
 
 <!-- wp:buttons {"style":{"layout":{"columnSpan":3,"rowSpan":1},"border":{"right":{"width":"1px"}}},"layout":{"type":"flex","justifyContent":"center"}} -->
-<div class="wp-block-buttons" style="border-right-width:1px"><!-- wp:button {"className":"is-style-arrow-button","style":{"typography":{"textTransform":"uppercase"}}} -->
-<div class="wp-block-button is-style-arrow-button"><a class="wp-block-button__link wp-element-button" style="text-transform:uppercase"><?php esc_html_e( 'Let’s Talk', 'glaser' ); ?></a></div>
+<div class="wp-block-buttons" style="border-right-width:1px"><!-- wp:button {"className":"is-style-under-arrow-button","style":{"typography":{"textTransform":"uppercase"}}} -->
+<div class="wp-block-button is-style-under-arrow-button"><a class="wp-block-button__link wp-element-button" style="text-transform:uppercase"><?php esc_html_e( 'Let’s Talk', 'glaser' ); ?></a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons -->
 
