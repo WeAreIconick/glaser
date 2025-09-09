@@ -96,5 +96,36 @@
 				}
 			}
 		}
+		&.is-style-under-arrow-button {
+			padding: 0;
+
+			&::after {
+				content: '';
+				display: block;
+				width: 25%;
+				height: 1px;
+				background-color: var(--wp--preset--color--borders);
+				transition: width 0.5s ease-in-out;
+			}
+			&:hover::after {
+				width: 100%;
+			}
+			a.wp-block-button__link {
+				padding: 0.5rem 0.2rem;
+				display: block;
+				position: relative;
+
+
+				&::after {
+					content: "→";
+					display: inline-block;
+					transition: margin 0.5s ease-in-out;
+					margin-left: 0.5rem;
+				}
+				&:hover::after {
+					margin-left: 1.0rem;
+				}
+			}
+		}
 	}
 }

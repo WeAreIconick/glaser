@@ -7,4 +7,8 @@ domReady(() => {
 		name: 'arrow-button',
 		label: __('Arrow Button'),
 	});
+	registerBlockStyle('core/button', {
+		name: 'under-arrow-button',
+		label: __('Under Arrow Button'),
+	});
 });

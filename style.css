@@ -99,5 +99,33 @@ Requires PHP: 8.2
 .wp-block-buttons .wp-block-button.is-style-arrow-button a:hover::after, .wp-block-buttons .wp-block-button.is-style-arrow-button .block-editor-rich-text__editable:hover::after {
   transform: rotate(0);
 }
+.wp-block-buttons .wp-block-button.is-style-under-arrow-button {
+  padding: 0;
+}
+.wp-block-buttons .wp-block-button.is-style-under-arrow-button::after {
+  content: "";
+  display: block;
+  width: 25%;
+  height: 1px;
+  background-color: var(--wp--preset--color--borders);
+  transition: width 0.5s ease-in-out;
+}
+.wp-block-buttons .wp-block-button.is-style-under-arrow-button:hover::after {
+  width: 100%;
+}
+.wp-block-buttons .wp-block-button.is-style-under-arrow-button a.wp-block-button__link {
+  padding: 0.5rem 0.2rem;
+  display: block;
+  position: relative;
+}
+.wp-block-buttons .wp-block-button.is-style-under-arrow-button a.wp-block-button__link::after {
+  content: "→";
+  display: inline-block;
+  transition: margin 0.5s ease-in-out;
+  margin-left: 0.5rem;
+}
+.wp-block-buttons .wp-block-button.is-style-under-arrow-button a.wp-block-button__link:hover::after {
+  margin-left: 1rem;
+}
 
 /*# sourceMappingURL=style.css.map */
