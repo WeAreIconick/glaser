@@ -15,6 +15,18 @@ namespace Glaser\Functions;
 function on_after_setup_theme() {
 	require \get_theme_file_path( '/inc/starter-content.php' );
 	\add_theme_support( 'starter-content', \Glaser\StarterContent\get_starter_content() );
+
+	/**
+	 * Make sure that if we're in Playground previewing, that the SVGs can be uploaded.
+	 */
+	//if ( has_action( 'plugins_loaded', 'importThemeStarterContent_plugins_loaded' ) ) {
+	if ( did_filter( 'get_theme_starter_content' ) ) {
+		add_filter( 'upload_mimes', function( $mimes = array() ) {
+			$mimes['svg']  = 'image/svg+xml';
+			$mimes['svgz'] = 'image/svg+xml';
+			return $mimes;
+		} );
+	}
 }
 \add_action( 'after_setup_theme', __NAMESPACE__ . '\on_after_setup_theme' );
 
