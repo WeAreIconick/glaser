@@ -41,7 +41,7 @@
         "lint:readme-md": "wp-scripts lint-md-docs README.md",
         "lint:css": "wp-scripts lint-style ./sass",
         "lint:js": "wp-scripts lint-js ./js",
-        "build": "npm-run-all --parallel \"build:*\"",
+        "build": "npm-run-all --parallel \"build:*\" && npm run theme-zip",
         "build:js": "wp-scripts build --blocks-manifest",
         "build:scss": "sass sass/style.scss:style.css --style=expanded --source-map",
         "start": "npm-run-all --parallel \"start:*\"",
