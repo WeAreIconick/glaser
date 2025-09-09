@@ -139,7 +139,7 @@ function get_starter_content() {
 
 <!-- wp:quote -->
 <blockquote class="wp-block-quote"><!-- wp:paragraph {"fontSize":"x-large"} -->
-<p class="has-x-large-font-size">Kroma helped our brand flourish in just one year. Their creative vision and excellent team helped us grow our business in ways we couldn't imagine.</p>
+<p class="has-x-large-font-size">Kroma helped our brand flourish in just one year. Their creative vision and excellent team helped us grow our business in ways we couldn’t imagine.</p>
 <!-- /wp:paragraph --><cite>Sarah Conor,<br>Founder - Kozmo</cite></blockquote>
 <!-- /wp:quote --></div>
 <!-- /wp:column --></div>
@@ -161,7 +161,7 @@ function get_starter_content() {
 
 <!-- wp:quote -->
 <blockquote class="wp-block-quote"><!-- wp:paragraph {"fontSize":"x-large"} -->
-<p class="has-x-large-font-size">Kroma helped our brand flourish in just one year. Their creative vision and excellent team helped us grow our business in ways we couldn't imagine.</p>
+<p class="has-x-large-font-size">Kroma helped our brand flourish in just one year. Their creative vision and excellent team helped us grow our business in ways we couldn’t imagine.</p>
 <!-- /wp:paragraph --><cite>Sarah Conor,<br>Founder - Kozmo</cite></blockquote>
 <!-- /wp:quote --></div>
 <!-- /wp:column --></div>
