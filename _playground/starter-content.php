@@ -24,57 +24,149 @@ function get_starter_content() {
 			'front' => array(
 				'post_type'    => 'page',
 				'post_title'   => esc_html_x( 'Front Page', 'Theme starter content', 'glaser' ),
-				'post_content' => '<!-- wp:heading -->
-<h2 class="wp-block-heading">I am a heading!</h2>
+				'post_content' => '<!-- wp:group {"metadata":{"name":"Services Group"},"align":"full","style":{"border":{"width":"1px"},"spacing":{"blockGap":"0"}},"layout":{"type":"default"}} -->
+<div class="wp-block-group alignfull" style="border-width:1px"><!-- wp:heading {"level":3,"align":"full","style":{"border":{"bottom":{"width":"1px"}},"spacing":{"padding":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|50","left":"var:preset|spacing|50","right":"var:preset|spacing|50"}}}} -->
+<h3 class="wp-block-heading alignfull" style="border-bottom-width:1px;padding-top:var(--wp--preset--spacing--50);padding-right:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--50)">Services</h3>
 <!-- /wp:heading -->
 
-<!-- wp:columns -->
-<div class="wp-block-columns"><!-- wp:column {"width":"66.66%"} -->
-<div class="wp-block-column" style="flex-basis:66.66%"><!-- wp:paragraph -->
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam facilisis metus sit amet consequat dignissim. Etiam pretium nisi orci, quis congue enim mattis placerat. Integer vulputate lectus sit amet justo fringilla, non pretium justo condimentum. Aenean tempor ut nibh eget pellentesque. Mauris at condimentum arcu, ac gravida nulla. Etiam iaculis volutpat facilisis. Aliquam imperdiet vitae nulla vel fringilla.</p>
+<!-- wp:group {"align":"full","style":{"spacing":{"blockGap":"0"}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignfull"><!-- wp:heading {"align":"full","style":{"border":{"bottom":{"width":"1px"}},"spacing":{"padding":{"top":"var:preset|spacing|30","bottom":"var:preset|spacing|30","left":"var:preset|spacing|40","right":"var:preset|spacing|40"}}},"fontSize":"x-large"} -->
+<h2 class="wp-block-heading alignfull has-x-large-font-size" style="border-bottom-width:1px;padding-top:var(--wp--preset--spacing--30);padding-right:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--30);padding-left:var(--wp--preset--spacing--40)">01 Branding</h2>
+<!-- /wp:heading -->
+
+<!-- wp:heading {"align":"full","style":{"border":{"bottom":{"width":"1px"}},"spacing":{"padding":{"top":"var:preset|spacing|30","bottom":"var:preset|spacing|30","left":"var:preset|spacing|40","right":"var:preset|spacing|40"}}},"fontSize":"x-large"} -->
+<h2 class="wp-block-heading alignfull has-x-large-font-size" style="border-bottom-width:1px;padding-top:var(--wp--preset--spacing--30);padding-right:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--30);padding-left:var(--wp--preset--spacing--40)">02 Motion</h2>
+<!-- /wp:heading -->
+
+<!-- wp:heading {"align":"full","style":{"border":{"bottom":{"width":"1px"}},"spacing":{"padding":{"top":"var:preset|spacing|30","bottom":"var:preset|spacing|30","left":"var:preset|spacing|40","right":"var:preset|spacing|40"}}},"fontSize":"x-large"} -->
+<h2 class="wp-block-heading alignfull has-x-large-font-size" style="border-bottom-width:1px;padding-top:var(--wp--preset--spacing--30);padding-right:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--30);padding-left:var(--wp--preset--spacing--40)">03 UI.UX</h2>
+<!-- /wp:heading -->
+
+<!-- wp:heading {"align":"full","style":{"border":{"bottom":{"width":"1px"}},"spacing":{"padding":{"top":"var:preset|spacing|30","bottom":"var:preset|spacing|30","left":"var:preset|spacing|40","right":"var:preset|spacing|40"}}},"fontSize":"x-large"} -->
+<h2 class="wp-block-heading alignfull has-x-large-font-size" style="border-bottom-width:1px;padding-top:var(--wp--preset--spacing--30);padding-right:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--30);padding-left:var(--wp--preset--spacing--40)">04 Packaging</h2>
+<!-- /wp:heading -->
+
+<!-- wp:heading {"align":"full","style":{"border":{"bottom":{"width":"1px"}},"spacing":{"padding":{"top":"var:preset|spacing|30","bottom":"var:preset|spacing|30","left":"var:preset|spacing|40","right":"var:preset|spacing|40"}}},"fontSize":"x-large"} -->
+<h2 class="wp-block-heading alignfull has-x-large-font-size" style="border-bottom-width:1px;padding-top:var(--wp--preset--spacing--30);padding-right:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--30);padding-left:var(--wp--preset--spacing--40)">05 Video</h2>
+<!-- /wp:heading -->
+
+<!-- wp:heading {"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|30","bottom":"var:preset|spacing|30","left":"var:preset|spacing|40","right":"var:preset|spacing|40"}}},"fontSize":"x-large"} -->
+<h2 class="wp-block-heading alignfull has-x-large-font-size" style="padding-top:var(--wp--preset--spacing--30);padding-right:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--30);padding-left:var(--wp--preset--spacing--40)">06 Coding</h2>
+<!-- /wp:heading --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"metadata":{"name":"Works Group"},"align":"full","style":{"border":{"width":"1px"},"spacing":{"blockGap":"0"}},"layout":{"type":"default"}} -->
+<div class="wp-block-group alignfull" style="border-width:1px"><!-- wp:group {"align":"full","style":{"border":{"bottom":{"width":"1px"}}},"layout":{"type":"default"}} -->
+<div class="wp-block-group alignfull" style="border-bottom-width:1px"><!-- wp:heading {"level":1,"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|50","bottom":"0","left":"var:preset|spacing|50","right":"var:preset|spacing|50"}}}} -->
+<h1 class="wp-block-heading alignfull" style="padding-top:var(--wp--preset--spacing--50);padding-right:var(--wp--preset--spacing--50);padding-bottom:0;padding-left:var(--wp--preset--spacing--50)">Works</h1>
+<!-- /wp:heading -->
+
+<!-- wp:columns {"style":{"layout":{"selfStretch":"fit","flexSize":null},"spacing":{"padding":{"right":"var:preset|spacing|50","left":"var:preset|spacing|50","top":"0","bottom":"var:preset|spacing|30"}}}} -->
+<div class="wp-block-columns" style="padding-top:0;padding-right:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--30);padding-left:var(--wp--preset--spacing--50)"><!-- wp:column {"width":"50%"} -->
+<div class="wp-block-column" style="flex-basis:50%"><!-- wp:paragraph {"fontSize":"x-large"} -->
+<p class="has-x-large-font-size">Telling your story in a way that makes hearts skip a beat and minds remember.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column -->
 
-<!-- wp:group {"align":"full","className":"partners-grid","layout":{"type":"grid","columnCount":4,"minimumColumnWidth":null}} -->
-<div class="wp-block-group alignfull partners-grid"><!-- wp:image {"id":{{logo-1}},"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="{{logo-1}}"/></figure>
-<!-- /wp:image -->
-
-<!-- wp:image {"id":{{logo-2}},"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="{{logo-2}}"/></figure>
-<!-- /wp:image -->
-
-<!-- wp:image {"id":{{logo-3}},"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="{{logo-3}}"/></figure>
-<!-- /wp:image -->
-
-<!-- wp:image {"id":{{logo-4}},"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="{{logo-4}}"/></figure>
-<!-- /wp:image -->
-
-<!-- wp:image {"id":{{logo-5}},"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="{{logo-5}}"/></figure>
-<!-- /wp:image -->
-
-<!-- wp:image {"id":{{logo-6}},"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="{{logo-6}}"/></figure>
-<!-- /wp:image -->
-
-<!-- wp:image {"id":{{logo-7}},"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="{{logo-7}}"/></figure>
-<!-- /wp:image -->
-
-<!-- wp:image {"id":{{logo-8}},"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="{{logo-8}}"/></figure>
-<!-- /wp:image --></div>
+<!-- wp:column {"width":"50%"} -->
+<div class="wp-block-column" style="flex-basis:50%"><!-- wp:buttons {"layout":{"type":"flex","justifyContent":"right","verticalAlignment":"bottom"}} -->
+<div class="wp-block-buttons"><!-- wp:button {"className":"is-style-under-arrow-button"} -->
+<div class="wp-block-button is-style-under-arrow-button"><a class="wp-block-button__link wp-element-button">View All</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns --></div>
 <!-- /wp:group -->
 
-<!-- wp:column {"width":"33.33%"} -->
-<div class="wp-block-column" style="flex-basis:33.33%"><!-- wp:paragraph -->
-<p>Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur quis sapien consequat, condimentum diam sit amet, lobortis quam. Donec tempor odio et turpis pulvinar, eget ornare justo bibendum. Maecenas ipsum nulla, semper a neque sit amet, finibus scelerisque ex. Sed fermentum, augue nec pretium semper, mi eros hendrerit nisi, vitae ultrices nibh lectus nec ex. Etiam turpis sem, tincidunt vel vehicula ac, ornare vitae magna. Aenean sollicitudin mi vitae lorem ultrices malesuada. Aliquam at massa et massa ornare sollicitudin. Maecenas porta diam sed odio bibendum, in fringilla sapien consectetur. Donec at convallis ante, quis pharetra quam. Sed vitae ante ut nulla scelerisque tempus. Nam at diam facilisis nibh eleifend ornare. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;</p>
+<!-- wp:cover {"overlayColor":"primary","isUserOverlayColor":true,"minHeight":800,"minHeightUnit":"px","align":"full","layout":{"type":"default"}} -->
+<div class="wp-block-cover alignfull" style="min-height:800px"><span aria-hidden="true" class="wp-block-cover__background has-primary-background-color has-background-dim-100 has-background-dim"></span><div class="wp-block-cover__inner-container"><!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"}} -->
+<div class="wp-block-buttons"><!-- wp:button {"className":"is-style-arrow-button"} -->
+<div class="wp-block-button is-style-arrow-button"><a class="wp-block-button__link wp-element-button"><strong>Client </strong>One</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons --></div></div>
+<!-- /wp:cover -->
+
+<!-- wp:cover {"customOverlayColor":"#b30000","isUserOverlayColor":true,"minHeight":800,"align":"full","layout":{"type":"default"}} -->
+<div class="wp-block-cover alignfull" style="min-height:800px"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-100 has-background-dim" style="background-color:#b30000"></span><div class="wp-block-cover__inner-container"><!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"}} -->
+<div class="wp-block-buttons"><!-- wp:button {"className":"is-style-arrow-button"} -->
+<div class="wp-block-button is-style-arrow-button"><a class="wp-block-button__link wp-element-button"><strong>Client </strong> Two</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons --></div></div>
+<!-- /wp:cover -->
+
+<!-- wp:cover {"customOverlayColor":"#04a500","isUserOverlayColor":true,"minHeight":800,"align":"full","layout":{"type":"default"}} -->
+<div class="wp-block-cover alignfull" style="min-height:800px"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-100 has-background-dim" style="background-color:#04a500"></span><div class="wp-block-cover__inner-container"><!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"}} -->
+<div class="wp-block-buttons"><!-- wp:button {"className":"is-style-arrow-button"} -->
+<div class="wp-block-button is-style-arrow-button"><a class="wp-block-button__link wp-element-button"><strong>Client </strong>Three</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons --></div></div>
+<!-- /wp:cover --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"metadata":{"name":"Kind Words Group"},"align":"full","style":{"border":{"width":"1px"},"spacing":{"blockGap":"0"}},"layout":{"type":"default"}} -->
+<div class="wp-block-group alignfull" style="border-width:1px"><!-- wp:group {"align":"full","style":{"border":{"bottom":{"width":"1px"}}},"layout":{"type":"default"}} -->
+<div class="wp-block-group alignfull" style="border-bottom-width:1px"><!-- wp:heading {"level":1,"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|50","bottom":"0","left":"var:preset|spacing|50","right":"var:preset|spacing|50"}}}} -->
+<h1 class="wp-block-heading alignfull" style="padding-top:var(--wp--preset--spacing--50);padding-right:var(--wp--preset--spacing--50);padding-bottom:0;padding-left:var(--wp--preset--spacing--50)">Kind Words</h1>
+<!-- /wp:heading -->
+
+<!-- wp:columns {"style":{"layout":{"selfStretch":"fit","flexSize":null},"spacing":{"padding":{"right":"var:preset|spacing|50","left":"var:preset|spacing|50","top":"0","bottom":"var:preset|spacing|30"}}}} -->
+<div class="wp-block-columns" style="padding-top:0;padding-right:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--30);padding-left:var(--wp--preset--spacing--50)"><!-- wp:column {"width":"50%"} -->
+<div class="wp-block-column" style="flex-basis:50%"><!-- wp:paragraph {"fontSize":"x-large"} -->
+<p class="has-x-large-font-size">Helping brands achieve their goals and make a change is our daily motive at Kroma</p>
 <!-- /wp:paragraph --></div>
+<!-- /wp:column -->
+
+<!-- wp:column {"width":"50%"} -->
+<div class="wp-block-column" style="flex-basis:50%"></div>
 <!-- /wp:column --></div>
-<!-- /wp:columns -->',
+<!-- /wp:columns --></div>
+<!-- /wp:group -->
+
+<!-- wp:columns {"metadata":{"name":"Citation One"}} -->
+<div class="wp-block-columns"><!-- wp:column {"width":"66.66%"} -->
+<div class="wp-block-column" style="flex-basis:66.66%"><!-- wp:cover {"overlayColor":"primary","isUserOverlayColor":true,"minHeight":800,"layout":{"type":"constrained"}} -->
+<div class="wp-block-cover" style="min-height:800px"><span aria-hidden="true" class="wp-block-cover__background has-primary-background-color has-background-dim-100 has-background-dim"></span><div class="wp-block-cover__inner-container"><!-- wp:paragraph {"align":"center","placeholder":"Write title…","fontSize":"large"} -->
+<p class="has-text-align-center has-large-font-size"></p>
+<!-- /wp:paragraph --></div></div>
+<!-- /wp:cover --></div>
+<!-- /wp:column -->
+
+<!-- wp:column {"verticalAlignment":"center","width":"33.33%","style":{"spacing":{"padding":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|50","left":"var:preset|spacing|50","right":"var:preset|spacing|50"}}}} -->
+<div class="wp-block-column is-vertically-aligned-center" style="padding-top:var(--wp--preset--spacing--50);padding-right:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--50);flex-basis:33.33%"><!-- wp:heading -->
+<h2 class="wp-block-heading">Krate</h2>
+<!-- /wp:heading -->
+
+<!-- wp:quote -->
+<blockquote class="wp-block-quote"><!-- wp:paragraph {"fontSize":"x-large"} -->
+<p class="has-x-large-font-size">Kroma helped our brand flourish in just one year. Their creative vision and excellent team helped us grow our business in ways we couldn't imagine.</p>
+<!-- /wp:paragraph --><cite>Sarah Conor,<br>Founder - Kozmo</cite></blockquote>
+<!-- /wp:quote --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns -->
+
+<!-- wp:columns {"metadata":{"name":"Citation Two"}} -->
+<div class="wp-block-columns"><!-- wp:column {"width":"66.66%"} -->
+<div class="wp-block-column" style="flex-basis:66.66%"><!-- wp:cover {"customOverlayColor":"#3032b0","isUserOverlayColor":true,"minHeight":800,"layout":{"type":"constrained"}} -->
+<div class="wp-block-cover" style="min-height:800px"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-100 has-background-dim" style="background-color:#3032b0"></span><div class="wp-block-cover__inner-container"><!-- wp:paragraph {"align":"center","placeholder":"Write title…","fontSize":"large"} -->
+<p class="has-text-align-center has-large-font-size"></p>
+<!-- /wp:paragraph --></div></div>
+<!-- /wp:cover --></div>
+<!-- /wp:column -->
+
+<!-- wp:column {"verticalAlignment":"center","width":"33.33%","style":{"spacing":{"padding":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|50","left":"var:preset|spacing|50","right":"var:preset|spacing|50"}}}} -->
+<div class="wp-block-column is-vertically-aligned-center" style="padding-top:var(--wp--preset--spacing--50);padding-right:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--50);flex-basis:33.33%"><!-- wp:heading -->
+<h2 class="wp-block-heading">Krate</h2>
+<!-- /wp:heading -->
+
+<!-- wp:quote -->
+<blockquote class="wp-block-quote"><!-- wp:paragraph {"fontSize":"x-large"} -->
+<p class="has-x-large-font-size">Kroma helped our brand flourish in just one year. Their creative vision and excellent team helped us grow our business in ways we couldn't imagine.</p>
+<!-- /wp:paragraph --><cite>Sarah Conor,<br>Founder - Kozmo</cite></blockquote>
+<!-- /wp:quote --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns --></div>
+<!-- /wp:group -->',
 			),
 			'about',
 			'contact',
