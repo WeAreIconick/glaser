@@ -71,7 +71,7 @@ function get_starter_content() {
 		'attachments' => array(
 			'wapuu' => array(
 				'post_title' => esc_html_x( 'Wapuu', 'Theme starter content', 'glaser' ),
-				'file'       => '_playground/wapuu.png',
+				'file'       => '_playground/assets/wapuu.png',
 			),
 			'logo-1' => array(
 				'post_title' => esc_html_x( 'Logo 1', 'Theme starter content', 'glaser' ),

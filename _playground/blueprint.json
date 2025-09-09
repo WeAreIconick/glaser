@@ -10,26 +10,6 @@
 	},
 	"steps": [
 		{
-			"step": "installPlugin",
-			"pluginData": {
-				"resource": "wordpress.org/plugins",
-				"slug": "create-block-theme"
-			},
-			"options": {
-				"activate": true
-			}
-		},
-		{
-			"step": "installPlugin",
-			"pluginData": {
-				"resource": "wordpress.org/plugins",
-				"slug": "safe-svg"
-			},
-			"options": {
-				"activate": true
-			}
-		},
-		{
 			"step": "installTheme",
 			"themeData": {
 				"resource": "url",
