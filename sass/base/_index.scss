@@ -1,4 +1,8 @@
 
+:root .is-layout-constrained > .wp-block-group {
+	margin-block-start: 0;
+}
+
 .wp-site-blocks {
 	padding-left: 1rem;
 	padding-right: 1rem;

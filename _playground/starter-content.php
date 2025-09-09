@@ -35,6 +35,40 @@ function get_starter_content() {
 <!-- /wp:paragraph --></div>
 <!-- /wp:column -->
 
+<!-- wp:group {"align":"full","className":"partners-grid","layout":{"type":"grid","columnCount":4,"minimumColumnWidth":null}} -->
+<div class="wp-block-group alignfull partners-grid"><!-- wp:image {"id":{{logo-1}},"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img src="{{logo-1}}"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:image {"id":{{logo-2}},"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img src="{{logo-2}}"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:image {"id":{{logo-3}},"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img src="{{logo-3}}"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:image {"id":{{logo-4}},"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img src="{{logo-4}}"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:image {"id":{{logo-5}},"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img src="{{logo-5}}"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:image {"id":{{logo-6}},"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img src="{{logo-6}}"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:image {"id":{{logo-7}},"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img src="{{logo-7}}"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:image {"id":{{logo-8}},"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img src="{{logo-8}}"/></figure>
+<!-- /wp:image --></div>
+<!-- /wp:group -->
+
 <!-- wp:column {"width":"33.33%"} -->
 <div class="wp-block-column" style="flex-basis:33.33%"><!-- wp:paragraph -->
 <p>Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur quis sapien consequat, condimentum diam sit amet, lobortis quam. Donec tempor odio et turpis pulvinar, eget ornare justo bibendum. Maecenas ipsum nulla, semper a neque sit amet, finibus scelerisque ex. Sed fermentum, augue nec pretium semper, mi eros hendrerit nisi, vitae ultrices nibh lectus nec ex. Etiam turpis sem, tincidunt vel vehicula ac, ornare vitae magna. Aenean sollicitudin mi vitae lorem ultrices malesuada. Aliquam at massa et massa ornare sollicitudin. Maecenas porta diam sed odio bibendum, in fringilla sapien consectetur. Donec at convallis ante, quis pharetra quam. Sed vitae ante ut nulla scelerisque tempus. Nam at diam facilisis nibh eleifend ornare. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;</p>

@@ -11,6 +11,10 @@ Text Domain:  glaser
 Domain Path:  /languages
 Requires PHP: 8.2
 */
+:root .is-layout-constrained > .wp-block-group {
+  margin-block-start: 0;
+}
+
 .wp-site-blocks {
   padding-left: 1rem;
   padding-right: 1rem;
@@ -47,6 +51,31 @@ Requires PHP: 8.2
 }
 .wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__responsive-container-content ul.wp-block-navigation__container > li.wp-block-navigation-item a:hover span {
   padding-left: 1rem;
+}
+
+@media (599px < width < 1300px) {
+  .wp-block-group.is-layout-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (max-width: 599px) {
+  .wp-block-group.is-layout-grid {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+}
+.wp-block-group.is-layout-grid.partners-grid {
+  overflow: hidden;
+  gap: 0;
+}
+.wp-block-group.is-layout-grid.partners-grid > * {
+  text-align: center;
+  align-items: center;
+  align-content: center;
+  margin-left: -1px;
+  margin-bottom: -1px;
+  border-left: 1px solid #000;
+  border-bottom: 1px solid #000;
+  padding: 1rem 2rem;
 }
 
 .wp-block-buttons .wp-block-button {
