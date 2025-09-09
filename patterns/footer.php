@@ -74,9 +74,7 @@
 <!-- wp:social-link {"service":"facebook"} /--></ul>
 <!-- /wp:social-links -->
 
-<!-- wp:paragraph {"align":"center"} -->
-<p class="has-text-align-center"><?php printf( esc_html__( 'Theme repository: %s', 'glaser' ), '<a href="https://github.com/IconickThemes/glaser" rel="nofollow">Glaser</a>' ); ?></p>
-<!-- /wp:paragraph -->
+<!-- wp:pattern {"slug":"glaser/colophon"} /-->
 
 <!-- wp:paragraph -->
 <p><?php esc_html_e( 'Change Brightness', 'glaser' ); ?></p>

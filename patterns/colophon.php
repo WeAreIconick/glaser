@@ -7,8 +7,8 @@
  */
 ?>
 
-<!-- wp:paragraph {"fontSize":"small"} -->
-<p class="has-small-font-size">
+<!-- wp:paragraph {"align":"center","fontSize":"small"} -->
+<p class="has-text-align-center has-small-font-size">
 	<?php
 	printf(
 		/* translators: Powered by WordPress. %s: WordPress link. */
