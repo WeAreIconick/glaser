@@ -210,11 +210,18 @@
 	"templateParts": [
 		{
 			"area": "header",
-			"name": "header"
+			"name": "header",
+			"title": "Header"
+		},
+		{
+			"area": "header",
+			"name": "header-large",
+			"title": "Header Large"
 		},
 		{
 			"area": "footer",
-			"name": "footer"
+			"name": "footer",
+			"title": "Footer"
 		}
 	],
 	"version": 3,
