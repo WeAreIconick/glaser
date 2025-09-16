@@ -1,6 +1,32 @@
 
-:root .is-layout-constrained > .wp-block-group {
-	margin-block-start: 0;
+:root {
+	color-scheme: light dark;
+	&[data-color-scheme="light"] {
+		color-scheme: light;
+	}
+	&[data-color-scheme="dark"] {
+		color-scheme: dark;
+	}
+
+	.is-layout-constrained > .wp-block-group {
+		margin-block-start: 0;
+	}
+
+	--glaser--color--background: var( --wp--preset--color--background );
+	--glaser--color--primary: var( --wp--preset--color--primary );
+	--glaser--color--borders: var( --wp--preset--color--borders );
+}
+
+html,
+body,
+.is-root-container.is-desktop-preview {
+	--wp--preset--color--background: light-dark( var(--glaser--color--background), var(--glaser--color--primary) );
+	--wp--preset--color--primary: light-dark( var(--glaser--color--primary), var(--glaser--color--background) );
+	--wp--preset--color--borders: light-dark( var(--glaser--color--primary), var(--glaser--color--background) );
+
+	background: var( --wp--preset--color--background );
+	color: var( --wp--preset--color--primary );
+	border-color: var( --wp--preset--color--borders );
 }
 
 .wp-site-blocks {

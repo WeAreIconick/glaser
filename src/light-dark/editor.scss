@@ -1,0 +1,14 @@
+.wp-block-glaser-light-dark {
+	&::after {
+		display: none;
+	}
+
+	.components-text-control__label {
+
+	}
+
+	.components-text-control__input {
+		font-size: inherit;
+		background: none;
+	}
+}

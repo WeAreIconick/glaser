@@ -88,5 +88,52 @@ return array(
 		'editorStyle' => 'file:./index.css',
 		'style' => 'file:./style-index.css',
 		'viewScript' => 'file:./view.js'
+	),
+	'light-dark' => array(
+		'$schema' => 'https://schemas.wp.org/trunk/block.json',
+		'apiVersion' => 3,
+		'name' => 'glaser/light-dark',
+		'version' => '0.1.0',
+		'title' => 'Light/Dark Mode Toggle',
+		'category' => 'theme',
+		'icon' => 'color-picker',
+		'description' => 'A toggle link to swap the site between Light mode and Dark mode.',
+		'example' => array(
+			
+		),
+		'supports' => array(
+			'html' => false,
+			'typography' => array(
+				'fontSize' => true,
+				'__experimentalFontFamily' => true,
+				'__experimentalFontWeight' => true,
+				'__experimentalLetterSpacing' => true,
+				'__experimentalTextTransform' => true,
+				'__experimentalDefaultControls' => array(
+					'fontSize' => true
+				)
+			),
+			'spacing' => array(
+				'margin' => true,
+				'padding' => true
+			),
+			'__experimentalBorder' => array(
+				'width' => true
+			),
+			'align' => true
+		),
+		'attributes' => array(
+			'label' => array(
+				'type' => 'string',
+				'default' => 'Change theme',
+				'source' => 'text',
+				'selector' => 'button'
+			)
+		),
+		'textdomain' => 'glaser',
+		'editorScript' => 'file:./index.js',
+		'editorStyle' => 'file:./index.css',
+		'style' => 'file:./style-index.css',
+		'viewScript' => 'file:./view.js'
 	)
 );
