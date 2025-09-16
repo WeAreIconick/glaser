@@ -79,3 +79,16 @@ function blocks_init() {
 	\wp_register_block_types_from_metadata_collection( __DIR__ . '/build', __DIR__ . '/build/blocks-manifest.php' );
 }
 \add_action( 'init', __NAMESPACE__ . '\blocks_init' );
+
+
+function set_color_scheme() {
+	?>
+	<script id="glaser-set-color-scheme">
+	const colorScheme = localStorage.getItem('colorScheme');
+	if ( colorScheme ) {
+		document.documentElement.dataset.colorScheme = scheme;
+	}
+	</script>
+	<?php
+}
+add_action( 'wp_head', __NAMESPACE__ . '\set_color_scheme' );
