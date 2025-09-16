@@ -15,6 +15,27 @@ namespace Glaser\Functions;
 function on_after_setup_theme() {
 	require \get_theme_file_path( '/_playground/starter-content.php' );
 	\add_theme_support( 'starter-content', \Glaser\StarterContent\get_starter_content() );
+
+	/**
+	 * This is not yet a core standard, but the Performance Team is working on it!
+	 *
+	 */
+	\add_theme_support(
+		'view-transitions',
+		array(
+			'default-animation' => 'fade',
+			'post-selector'     => '',
+			'global-transition-names' => array(
+				'.wp-block-template-part.header' => 'header',
+				'.wp-block-template-part.footer' => 'footer',
+			),
+			'post-transition-names' => array(
+				'.wp-block-post-title'   => 'post-title',
+				'.wp-post-image'         => 'post-thumbnail',
+				'.wp-block-post-content' => 'post-content',
+			),
+		)
+	);
 }
 \add_action( 'after_setup_theme', __NAMESPACE__ . '\on_after_setup_theme' );
 

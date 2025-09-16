@@ -6,3 +6,7 @@
 @view-transition {
     navigation: auto;
 }
+
+#adminmenu > .menu-top {
+    view-transition-name: attr(id, none);
+}
