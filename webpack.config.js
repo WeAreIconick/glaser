@@ -5,5 +5,6 @@ module.exports = {
 	entry: {
 		...defaultConfig.entry(),
 		'block-editor': './src/block-editor.jsx',
+		'front-end': './src/front-end.jsx',
 	},
 };

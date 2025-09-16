@@ -53,6 +53,24 @@ function enqueue_block_editor_assets() {
 \add_action( 'enqueue_block_editor_assets', __NAMESPACE__ . '\enqueue_block_editor_assets' );
 
 /**
+ * Handle addition of any enqueues for the front-end.
+ *
+ * @return void
+ */
+function wp_enqueue_scripts() {
+	$asset_file = require \get_theme_file_path( '/build/front-end.asset.php' );
+
+	wp_enqueue_script(
+		'glaser_front-end',
+		\get_theme_file_uri( 'build/front-end.js' ),
+		$asset_file['dependencies'],
+		$asset_file['version'],
+		true
+	);
+}
+\add_action( 'wp_enqueue_scripts', __NAMESPACE__ . '\wp_enqueue_scripts' );
+
+/**
  * Initialize blocks.
  *
  * @return void
