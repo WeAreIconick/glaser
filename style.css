@@ -151,4 +151,12 @@ body,
   margin-left: 1rem;
 }
 
+/*
+ * This is the most basic view transition.  It could be updated
+ * to give more engaging options based on the content.
+ */
+@view-transition {
+  navigation: auto;
+}
+
 /*# sourceMappingURL=style.css.map */
