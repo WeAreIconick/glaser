@@ -62,8 +62,8 @@
 				align-content: center;
 				margin-left: -1px;
 				margin-bottom: -1px;
-				border-left: 1px solid #000;
-				border-bottom: 1px solid #000;
+				border-left: 1px solid var(--wp--preset--color--borders);
+				border-bottom: 1px solid var(--wp--preset--color--borders);
 				padding: 1rem 2rem;
 			}
 		}
@@ -128,4 +128,11 @@
 			}
 		}
 	}
+}
+
+.wp-block-separator {
+	border: 1px solid var(--wp--preset--color--borders);
+	border-width: 0 0 1px 0;
+	margin-left: calc( -1 * var(--wp--preset--spacing--50) );
+	margin-right: calc( -1 * var(--wp--preset--spacing--50) );
 }
