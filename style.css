@@ -104,6 +104,15 @@ body,
 .wp-block-buttons .wp-block-button {
   /** Arrow button styles.  Add in strong tags inside the button. */
 }
+.wp-block-buttons .wp-block-button.is-style-outline a, .wp-block-buttons .wp-block-button.is-style-outline .block-editor-rich-text__editable {
+  transition: border-radius 0.5s ease-in-out;
+  border-radius: 0;
+}
+.wp-block-buttons .wp-block-button.is-style-outline a:hover, .wp-block-buttons .wp-block-button.is-style-outline .block-editor-rich-text__editable:hover {
+  transition-delay: 0.1s;
+  transition-duration: 1s;
+  border-radius: 200px !important;
+}
 .wp-block-buttons .wp-block-button.is-style-arrow-button a strong, .wp-block-buttons .wp-block-button.is-style-arrow-button .block-editor-rich-text__editable strong {
   transition: margin 0.3s ease-in-out;
 }

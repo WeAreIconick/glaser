@@ -72,6 +72,17 @@
 
 .wp-block-buttons {
 	.wp-block-button {
+		&.is-style-outline a,
+		&.is-style-outline .block-editor-rich-text__editable {
+			transition: border-radius 0.5s ease-in-out;
+			border-radius: 0;
+
+			&:hover {
+				transition-delay: 0.1s;
+				transition-duration: 1s;
+				border-radius: 200px !important;
+			}
+		}
 		/** Arrow button styles.  Add in strong tags inside the button. */
 		&.is-style-arrow-button a,
 		&.is-style-arrow-button .block-editor-rich-text__editable {
