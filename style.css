@@ -19,9 +19,11 @@ Requires PHP: 8.2
 }
 :root[data-color-scheme=light] {
   color-scheme: light;
+  cursor: url("assets/circle-black.svg") 10 10, auto;
 }
 :root[data-color-scheme=dark] {
   color-scheme: dark;
+  cursor: url("assets/circle-white.svg") 10 10, auto;
 }
 :root .is-layout-constrained > .wp-block-group {
   margin-block-start: 0;
