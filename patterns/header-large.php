@@ -58,6 +58,6 @@
 <!-- /wp:buttons -->
 
 <!-- wp:glaser/light-dark {"style":{"border":{"top":{"width":"1px"}},"layout":{"columnSpan":1,"rowSpan":1}},"fontSize":"large"} -->
-<button style="border-top-width:1px" class="wp-block-glaser-light-dark has-large-font-size">Toggle Dark Mode</button>
+<button class="wp-block-glaser-light-dark no-label has-large-font-size" style="border-top-width:1px"></button>
 <!-- /wp:glaser/light-dark --></div>
 <!-- /wp:group -->

@@ -11,26 +11,40 @@
 	cursor: pointer;
 	font-size: var(--wp--preset--font-size--medium);
 
+
 	&::after {
 		content: "";
 		display: inline-block;
 		font-size: inherit;
-		margin-left: 0.5rem;
 		transform: rotate(-45deg);
 		transition: all 0.3s ease-in-out;
 
-	    :root[data-color-scheme="light"] & {
+		:root[data-color-scheme="light"] & {
 			content: '☾';
 		}
-	    :root[data-color-scheme="dark"] & {
+		:root[data-color-scheme="dark"] & {
 			content: '☼';
 		}
 
 	}
 	&:hover {
 		&::after {
-			margin-left: 1.5rem;
 			transform: rotate(0);
+		}
+	}
+	&.has-label {
+		&::after {
+			margin-left: 0.5rem;
+		}
+		&:hover {
+			&::after {
+				margin-left: 1.5rem;
+			}
+		}
+	}
+	&.no-label {
+		&::after {
+			font-size: var(--wp--preset--font-size--xx-large);
 		}
 	}
 }

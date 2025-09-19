@@ -79,7 +79,7 @@ echo sprintf( esc_html__( '1132 Anystreet Blvd%1$sNew York, 12256', 'glaser' ), 
 <!-- wp:pattern {"slug":"glaser/colophon"} /-->
 
 <!-- wp:glaser/light-dark {"style":{"layout":{"selfStretch":"fixed","flexSize":"15rem"}},"fontSize":"medium"} -->
-<button class="wp-block-glaser-light-dark has-medium-font-size">Change theme</button>
+<button class="wp-block-glaser-light-dark no-label has-medium-font-size"></button>
 <!-- /wp:glaser/light-dark --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group -->
