@@ -44,13 +44,19 @@
 .wp-block-group {
 
 	&.is-layout-grid {
-
+		gap: 1px;
+		background: var( --wp--preset--color--borders );
+		grid-auto-flow: dense;
 
 		@media ( $mobile-breakpoint < width < $medium-breakpoint ) {
     		grid-template-columns: repeat(2, minmax(0, 1fr));
 		}
 		@media ( max-width: $mobile-breakpoint ) {
     		grid-template-columns: repeat(1, minmax(0, 1fr));
+		}
+
+		> * {
+			background: var( --wp--preset--color--background );
 		}
 		&.partners-grid {
 			overflow: hidden;

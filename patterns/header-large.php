@@ -8,11 +8,11 @@
  * Inserter: no
  */
 ?>
-<!-- wp:group {"align":"full","style":{"border":{"width":"1px"},"spacing":{"blockGap":"0"}},"layout":{"type":"grid","columnCount":7,"minimumColumnWidth":null}} -->
-<div class="wp-block-group alignfull" style="border-width:1px"><!-- wp:site-title {"style":{"border":{"top":{"width":"0px","style":"none"},"right":{"width":"1px","color":"var:preset|color|primary"},"bottom":{"width":"1px"},"left":{"width":"0px","style":"none"}},"layout":{"columnSpan":3},"spacing":{"padding":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|50","left":"var:preset|spacing|50","right":"var:preset|spacing|50"}},"typography":{"textTransform":"uppercase"},"elements":{"link":{"color":{"text":"var:preset|color|primary"}}}},"textColor":"primary"} /-->
+<!-- wp:group {"align":"full","className":"header-grid","style":{"border":{"width":"1px"},"spacing":{"blockGap":"0"}},"layout":{"type":"grid","columnCount":7,"minimumColumnWidth":null}} -->
+<div class="wp-block-group alignfull header-grid" style="border-width:1px"><!-- wp:site-title {"style":{"layout":{"columnSpan":3},"spacing":{"padding":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|50","left":"var:preset|spacing|50","right":"var:preset|spacing|50"}},"typography":{"textTransform":"uppercase"},"elements":{"link":{"color":{"text":"var:preset|color|primary"}}}},"textColor":"primary"} /-->
 
-<!-- wp:group {"style":{"border":{"right":{"width":"1px"},"top":[],"bottom":{"width":"1px"},"left":[]},"spacing":{"padding":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|50","left":"var:preset|spacing|50","right":"10rem"}},"layout":{"columnSpan":3}},"layout":{"type":"flex","flexWrap":"nowrap"}} -->
-<div class="wp-block-group" style="border-right-width:1px;border-bottom-width:1px;padding-top:var(--wp--preset--spacing--50);padding-right:10rem;padding-bottom:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--50)"><!-- wp:glaser/badge {"label":"Made In NY","qty":3,"style":{"typography":{"textTransform":"uppercase","letterSpacing":"3px","fontSize":"0.6rem","fontWeight":"400","fontStyle":"normal"},"border":{"width":"1px"},"spacing":{"padding":{"top":"var:preset|spacing|30","bottom":"var:preset|spacing|30","left":"var:preset|spacing|30","right":"var:preset|spacing|30"}}}} -->
+<!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|50","left":"var:preset|spacing|50","right":"10rem"}},"layout":{"columnSpan":3}},"layout":{"type":"flex","flexWrap":"nowrap"}} -->
+<div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--50);padding-right:10rem;padding-bottom:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--50)"><!-- wp:glaser/badge {"label":"Made In NY","qty":3,"style":{"typography":{"textTransform":"uppercase","letterSpacing":"3px","fontSize":"0.6rem","fontWeight":"400","fontStyle":"normal"},"border":{"width":"1px"},"spacing":{"padding":{"top":"var:preset|spacing|30","bottom":"var:preset|spacing|30","left":"var:preset|spacing|30","right":"var:preset|spacing|30"}}}} -->
 <figure style="border-width:1px;padding-top:var(--wp--preset--spacing--30);padding-right:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--30);padding-left:var(--wp--preset--spacing--30);font-size:0.6rem;font-style:normal;font-weight:400;letter-spacing:3px;text-transform:uppercase;width:100px" class="wp-block-glaser-badge"><svg class="transform-origin-center-center" viewBox="0 0 100 100" overflow="visible"><path id="curve" d="M 0 50 L 0 50 A 1 1 0 0 1 100 50 L 100 50 L 100 50 A 1 1 0 0 1 0 50 L 0 50" stroke-width="none" fill="transparent"></path><text><textPath href="#curve" startOffset="0" dominant-baseline="Hanging">Made In NY · Made In NY · Made In NY · </textPath></text></svg></figure>
 <!-- /wp:glaser/badge -->
 
@@ -21,10 +21,10 @@
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
-<!-- wp:navigation {"slug":"primary","overlayMenu":"always","style":{"spacing":{"margin":{"top":"0"}},"layout":{"selfStretch":"fixed","flexSize":"5rem"}},"layout":{"type":"flex","setCascadingProperties":true,"justifyContent":"center","orientation":"horizontal"}} /-->
+<!-- wp:navigation {"slug":"primary","overlayMenu":"always","icon":"menu","style":{"spacing":{"margin":{"top":"0"},"blockGap":"var:preset|spacing|50"},"layout":{"selfStretch":"fixed","flexSize":"5rem"}},"layout":{"type":"flex","setCascadingProperties":true,"justifyContent":"center","orientation":"horizontal"}} /-->
 
-<!-- wp:group {"metadata":{"name":"Case Study"},"style":{"layout":{"columnSpan":3},"border":{"right":{"width":"1px"}},"spacing":{"padding":{"top":"var:preset|spacing|40","bottom":"var:preset|spacing|40"}}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group" style="border-right-width:1px;padding-top:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--40)"><!-- wp:heading {"style":{"typography":{"fontStyle":"normal","fontWeight":"400"}},"fontFamily":"inter"} -->
+<!-- wp:group {"metadata":{"name":"Case Study"},"style":{"layout":{"columnSpan":3},"spacing":{"padding":{"top":"var:preset|spacing|40","bottom":"var:preset|spacing|40"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--40)"><!-- wp:heading {"style":{"typography":{"fontStyle":"normal","fontWeight":"400"}},"fontFamily":"inter"} -->
 <h2 class="wp-block-heading has-inter-font-family" style="font-style:normal;font-weight:400"><?php esc_html_e('AirBnB', 'glaser');?></h2>
 <!-- /wp:heading -->
 
@@ -51,13 +51,13 @@
 <!-- /wp:columns --></div>
 <!-- /wp:group -->
 
-<!-- wp:buttons {"style":{"layout":{"columnSpan":3,"rowSpan":1},"border":{"right":{"width":"1px"}}},"layout":{"type":"flex","justifyContent":"center"}} -->
-<div class="wp-block-buttons" style="border-right-width:1px"><!-- wp:button {"className":"is-style-under-arrow-button","style":{"typography":{"textTransform":"uppercase"}}} -->
+<!-- wp:buttons {"style":{"layout":{"columnSpan":3,"rowSpan":1},"spacing":{"padding":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|50"}}},"layout":{"type":"flex","justifyContent":"center"}} -->
+<div class="wp-block-buttons" style="padding-top:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50)"><!-- wp:button {"className":"is-style-under-arrow-button","style":{"typography":{"textTransform":"uppercase"}}} -->
 <div class="wp-block-button is-style-under-arrow-button"><a class="wp-block-button__link wp-element-button" style="text-transform:uppercase"><?php esc_html_e('Let’s Talk', 'glaser');?></a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons -->
 
-<!-- wp:glaser/light-dark {"style":{"border":{"top":{"width":"1px"}},"layout":{"columnSpan":1,"rowSpan":1}},"fontSize":"large"} -->
-<button class="wp-block-glaser-light-dark no-label has-large-font-size" style="border-top-width:1px"></button>
+<!-- wp:glaser/light-dark {"style":{"layout":{"columnSpan":1,"rowSpan":1}},"fontSize":"large"} -->
+<button class="wp-block-glaser-light-dark no-label has-large-font-size"></button>
 <!-- /wp:glaser/light-dark --></div>
 <!-- /wp:group -->
