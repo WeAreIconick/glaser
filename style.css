@@ -52,11 +52,11 @@ body,
   width: 48px;
   height: 48px;
 }
-.wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__responsive-container-content ul.wp-block-navigation__container {
+.wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__responsive-container-content .wp-block-navigation__container {
   display: block;
   width: 100%;
 }
-.wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__responsive-container-content ul.wp-block-navigation__container > li.wp-block-navigation-item {
+.wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__responsive-container-content .wp-block-navigation__container > .wp-block-navigation-item {
   font-family: var(--wp--preset--font-family--unbounded);
   font-size: var(--wp--preset--font-size--xx-large);
   text-transform: uppercase;
@@ -64,17 +64,17 @@ body,
   list-style-type: decimal-leading-zero;
   list-style-position: inside;
 }
-.wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__responsive-container-content ul.wp-block-navigation__container > li.wp-block-navigation-item::marker {
+.wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__responsive-container-content .wp-block-navigation__container > .wp-block-navigation-item::marker {
   font-family: var(--wp--preset--font-family--inter);
   font-size: var(--wp--preset--font-size--large);
 }
-.wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__responsive-container-content ul.wp-block-navigation__container > li.wp-block-navigation-item a {
+.wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__responsive-container-content .wp-block-navigation__container > .wp-block-navigation-item a {
   display: inline-block;
 }
-.wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__responsive-container-content ul.wp-block-navigation__container > li.wp-block-navigation-item a span {
+.wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__responsive-container-content .wp-block-navigation__container > .wp-block-navigation-item a span {
   transition: padding 0.3s ease-in-out;
 }
-.wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__responsive-container-content ul.wp-block-navigation__container > li.wp-block-navigation-item a:hover span {
+.wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__responsive-container-content .wp-block-navigation__container > .wp-block-navigation-item a:hover span {
   padding-left: 1rem;
 }
 

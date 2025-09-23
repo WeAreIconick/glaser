@@ -10,11 +10,11 @@
 		}
 	}
 	.wp-block-navigation__responsive-container-content {
-		ul.wp-block-navigation__container {
+		.wp-block-navigation__container {
 			display: block;
 			width: 100%;
 
-			> li.wp-block-navigation-item {
+			> .wp-block-navigation-item {
 				font-family: var(--wp--preset--font-family--unbounded);
 				font-size: var(--wp--preset--font-size--xx-large);
 				text-transform: uppercase;
