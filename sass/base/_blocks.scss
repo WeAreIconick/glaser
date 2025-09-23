@@ -76,7 +76,7 @@
 	}
 }
 
-.wp-block-columns {
+footer .wp-block-columns {
 	&.is-layout-flex {
 		.wp-block-column {
 
@@ -97,6 +97,7 @@
 		}
 	}
 }
+
 .wp-block-buttons {
 	.wp-block-button {
 		&.is-style-outline a,
