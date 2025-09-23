@@ -17,8 +17,8 @@ echo sprintf( esc_html__( '%1$sWe’re Here%2$s · %3$sLet’s Talk%4$s', 'glase
 <!-- /wp:buttons -->
 
 <!-- wp:columns {"style":{"border":{"bottom":{"width":"1px"}}}} -->
-<div class="wp-block-columns" style="border-bottom-width:1px"><!-- wp:column {"style":{"border":{"right":{"width":"1px"}},"spacing":{"padding":{"right":"var:preset|spacing|50","left":"var:preset|spacing|50","top":"var:preset|spacing|50","bottom":"var:preset|spacing|50"}}}} -->
-<div class="wp-block-column" style="border-right-width:1px;padding-top:var(--wp--preset--spacing--50);padding-right:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--50)"><!-- wp:paragraph -->
+<div class="wp-block-columns" style="border-bottom-width:1px"><!-- wp:column {"style":{"spacing":{"padding":{"right":"var:preset|spacing|50","left":"var:preset|spacing|50","top":"var:preset|spacing|50","bottom":"var:preset|spacing|50"}}}} -->
+<div class="wp-block-column" style="padding-top:var(--wp--preset--spacing--50);padding-right:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--50)"><!-- wp:paragraph -->
 <p><?php /* Translators: 1. is a 'br' HTML element */ 
 echo sprintf( esc_html__( '1132 Anystreet Blvd%1$sNew York, 12256', 'glaser' ), '<br>' ); ?></p>
 <!-- /wp:paragraph -->
@@ -32,24 +32,24 @@ echo sprintf( esc_html__( '1132 Anystreet Blvd%1$sNew York, 12256', 'glaser' ), 
 <!-- /wp:paragraph --></div>
 <!-- /wp:column -->
 
-<!-- wp:column {"style":{"border":{"right":{"width":"1px"}},"spacing":{"padding":{"right":"var:preset|spacing|50","left":"var:preset|spacing|50","top":"var:preset|spacing|50","bottom":"var:preset|spacing|50"}}}} -->
-<div class="wp-block-column" style="border-right-width:1px;padding-top:var(--wp--preset--spacing--50);padding-right:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--50)"><!-- wp:heading {"level":4} -->
+<!-- wp:column {"style":{"spacing":{"padding":{"right":"var:preset|spacing|50","left":"var:preset|spacing|50","top":"var:preset|spacing|50","bottom":"var:preset|spacing|50"}}}} -->
+<div class="wp-block-column" style="padding-top:var(--wp--preset--spacing--50);padding-right:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--50)"><!-- wp:heading {"level":4} -->
 <h4 class="wp-block-heading"><?php esc_html_e('Pages', 'glaser');?></h4>
 <!-- /wp:heading -->
 
 <!-- wp:navigation {"slug":"footer-pages","layout":{"type":"flex","orientation":"vertical"}} /--></div>
 <!-- /wp:column -->
 
-<!-- wp:column {"style":{"border":{"right":{"width":"1px"}},"spacing":{"padding":{"right":"var:preset|spacing|50","left":"var:preset|spacing|50","top":"var:preset|spacing|50","bottom":"var:preset|spacing|50"}}}} -->
-<div class="wp-block-column" style="border-right-width:1px;padding-top:var(--wp--preset--spacing--50);padding-right:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--50)"><!-- wp:heading {"level":4} -->
+<!-- wp:column {"style":{"spacing":{"padding":{"right":"var:preset|spacing|50","left":"var:preset|spacing|50","top":"var:preset|spacing|50","bottom":"var:preset|spacing|50"}}}} -->
+<div class="wp-block-column" style="padding-top:var(--wp--preset--spacing--50);padding-right:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--50)"><!-- wp:heading {"level":4} -->
 <h4 class="wp-block-heading"><?php esc_html_e('Product', 'glaser');?></h4>
 <!-- /wp:heading -->
 
 <!-- wp:navigation {"slug":"footer-product","layout":{"type":"flex","orientation":"vertical"}} /--></div>
 <!-- /wp:column -->
 
-<!-- wp:column {"style":{"border":{"right":{"width":"1px"}},"spacing":{"padding":{"right":"var:preset|spacing|50","left":"var:preset|spacing|50","top":"var:preset|spacing|50","bottom":"var:preset|spacing|50"}}}} -->
-<div class="wp-block-column" style="border-right-width:1px;padding-top:var(--wp--preset--spacing--50);padding-right:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--50)"><!-- wp:heading {"level":4} -->
+<!-- wp:column {"style":{"spacing":{"padding":{"right":"var:preset|spacing|50","left":"var:preset|spacing|50","top":"var:preset|spacing|50","bottom":"var:preset|spacing|50"}}}} -->
+<div class="wp-block-column" style="padding-top:var(--wp--preset--spacing--50);padding-right:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--50)"><!-- wp:heading {"level":4} -->
 <h4 class="wp-block-heading"><?php esc_html_e('Information', 'glaser');?></h4>
 <!-- /wp:heading -->
 

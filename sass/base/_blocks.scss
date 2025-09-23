@@ -76,6 +76,27 @@
 	}
 }
 
+.wp-block-columns {
+	&.is-layout-flex {
+		.wp-block-column {
+
+			@media ( width > $columns-breakpoint ) {
+				border-right: 1px solid var(--wp--preset--color--borders);
+
+				&:last-child {
+					border-right: none;
+				}
+			}
+			@media ( max-width: $columns-breakpoint ) {
+				border-bottom: 1px solid var(--wp--preset--color--borders);
+
+				&:last-child {
+					border-bottom: none;
+				}
+			}
+		}
+	}
+}
 .wp-block-buttons {
 	.wp-block-button {
 		&.is-style-outline a,
