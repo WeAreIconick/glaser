@@ -12,8 +12,8 @@
 	<?php
 	printf(
 		/* translators: Powered by WordPress. %s: WordPress link. */
-		esc_html__( 'Powered by %s', 'twombly' ),
-		'<a href="' . esc_url( __( 'https://wordpress.org', 'twombly' ) ) . '" rel="nofollow">WordPress</a>'
+		esc_html__( 'Powered by %s', 'glaser' ),
+		'<a href="' . esc_url( __( 'https://wordpress.org', 'glaser' ) ) . '" rel="nofollow">WordPress</a>'
 	);
 	?>
 </p>

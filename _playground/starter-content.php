@@ -12,7 +12,7 @@ namespace Glaser\StarterContent;
 /**
  * Returns the array of starter content for the theme.
  *
- * Passes it through the `twombly_starter_content` filter before returning.
+ * Passes it through the `glaser_starter_content` filter before returning.
  *
  * @return array A filtered array of args for the starter_content.
  */
