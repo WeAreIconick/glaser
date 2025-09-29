@@ -20,7 +20,7 @@
         "**",
         "!.*",
         "!.git/**",
-        "!_playground/glaser.zip"
+        "!glaser.zip"
     ],
     "engines": {
         "node": ">=20.0",
@@ -41,12 +41,12 @@
         "lint:readme-md": "wp-scripts lint-md-docs README.md",
         "lint:css": "wp-scripts lint-style ./sass",
         "lint:js": "wp-scripts lint-js ./js",
-        "build": "npm-run-all --parallel \"build:*\" && npm run theme-zip",
+        "build": "npm-run-all --parallel \"build:*\"",
         "build:js": "wp-scripts build --blocks-manifest",
         "build:scss": "sass sass/style.scss:style.css --style=expanded --source-map",
         "start": "npm-run-all --parallel \"start:*\"",
         "start:js": "wp-scripts start --blocks-manifest",
         "start:scss": "sass --watch sass/style.scss:style.css --style=expanded --source-map",
-        "theme-zip": "wp-scripts plugin-zip && mv glaser.zip _playground/glaser.zip"
+        "theme-zip": "wp-scripts plugin-zip"
     }
 }

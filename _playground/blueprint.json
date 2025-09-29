@@ -13,7 +13,7 @@
 			"step": "installTheme",
 			"themeData": {
 				"resource": "url",
-				"url": "https://raw.githubusercontent.com/IconickThemes/glaser/refs/heads/main/_playground/glaser.zip"
+				"url": "https://github-proxy.com/proxy/?repo=WeAreIconick/glaser"
 			},
 			"options": {
 				"activate": true
