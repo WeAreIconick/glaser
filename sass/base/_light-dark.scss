@@ -5,17 +5,13 @@
  * Replace them with your own styles or remove the file completely.
  */
 
-:where(.wp-block-glaser-light-dark) {
-	background: none;
-	border: none;
+:where(.glaser-toggle-light-dark .wp-element-button) {
 	cursor: pointer;
-	font-size: var(--wp--preset--font-size--medium);
-
 
 	&::after {
 		content: "";
 		display: inline-block;
-		font-size: inherit;
+        font-size: var(--wp--preset--font-size--xx-large);
 		transform: rotate(-45deg);
 		transition: all 0.3s ease-in-out;
 
@@ -30,21 +26,6 @@
 	&:hover {
 		&::after {
 			transform: rotate(0);
-		}
-	}
-	&.has-label {
-		&::after {
-			margin-left: 0.5rem;
-		}
-		&:hover {
-			&::after {
-				margin-left: 1.5rem;
-			}
-		}
-	}
-	&.no-label {
-		&::after {
-			font-size: var(--wp--preset--font-size--xx-large);
 		}
 	}
 }

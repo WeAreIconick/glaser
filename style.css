@@ -49,6 +49,32 @@ body,
   padding-right: 1rem;
 }
 
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+:where(.glaser-toggle-light-dark .wp-element-button) {
+  cursor: pointer;
+}
+:where(.glaser-toggle-light-dark .wp-element-button)::after {
+  content: "";
+  display: inline-block;
+  font-size: var(--wp--preset--font-size--xx-large);
+  transform: rotate(-45deg);
+  transition: all 0.3s ease-in-out;
+}
+:root[data-color-scheme=light] :where(.glaser-toggle-light-dark .wp-element-button)::after {
+  content: "☾";
+}
+:root[data-color-scheme=dark] :where(.glaser-toggle-light-dark .wp-element-button)::after {
+  content: "☼";
+}
+:where(.glaser-toggle-light-dark .wp-element-button):hover::after {
+  transform: rotate(0);
+}
+
 .wp-block-navigation__responsive-container.is-menu-open {
   --wp--style--global--wide-size: calc( 100% - 6rem );
 }

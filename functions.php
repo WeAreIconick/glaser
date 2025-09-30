@@ -62,10 +62,18 @@ function enqueue_block_assets() {
  */
 function enqueue_block_editor_assets() {
 	$asset_file = require \get_theme_file_path( '/build/block-editor.asset.php' );
-
 	wp_enqueue_script(
 		'glaser_block-editor',
 		\get_theme_file_uri( 'build/block-editor.js' ),
+		$asset_file['dependencies'],
+		$asset_file['version'],
+		true
+	);
+
+	$asset_file = require \get_theme_file_path( '/build/button-variation-light-dark.asset.php' );
+	wp_enqueue_script(
+		'button-variation-light-dark',
+		\get_theme_file_uri( 'build/button-variation-light-dark.js' ),
 		$asset_file['dependencies'],
 		$asset_file['version'],
 		true

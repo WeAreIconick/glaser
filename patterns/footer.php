@@ -76,10 +76,15 @@ echo sprintf( esc_html__( '1132 Anystreet Blvd%1$sNew York, 12256', 'glaser' ), 
 <!-- wp:social-link {"service":"facebook"} /--></ul>
 <!-- /wp:social-links -->
 
-<!-- wp:pattern {"slug":"glaser/colophon"} /-->
+<!-- wp:paragraph {"align":"center","fontSize":"small"} -->
+<p class="has-text-align-center has-small-font-size">
+	Powered by <a href="https://wordpress.org" rel="nofollow">WordPress</a></p>
+<!-- /wp:paragraph -->
 
-<!-- wp:glaser/light-dark {"style":{"layout":{"selfStretch":"fixed","flexSize":"15rem"}},"fontSize":"medium"} -->
-<button class="wp-block-glaser-light-dark no-label has-medium-font-size"></button>
-<!-- /wp:glaser/light-dark --></div>
+<!-- wp:buttons -->
+<div class="wp-block-buttons"><!-- wp:button {"textAlign":"center","className":"glaser-toggle-light-dark"} -->
+<div class="wp-block-button glaser-toggle-light-dark"><a class="wp-block-button__link has-text-align-center wp-element-button" title="Toggle theme between Light and Dark modes."><?php esc_html_e('Toggle Brightness', 'glaser');?></a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group -->

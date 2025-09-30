@@ -57,7 +57,9 @@
 <!-- /wp:button --></div>
 <!-- /wp:buttons -->
 
-<!-- wp:glaser/light-dark {"style":{"layout":{"columnSpan":1,"rowSpan":1}},"fontSize":"large"} -->
-<button class="wp-block-glaser-light-dark no-label has-large-font-size"></button>
-<!-- /wp:glaser/light-dark --></div>
+<!-- wp:buttons {"style":{"layout":{"columnSpan":1,"rowSpan":1}},"layout":{"type":"flex","justifyContent":"center"}} -->
+<div class="wp-block-buttons"><!-- wp:button {"textAlign":"center","className":"glaser-toggle-light-dark"} -->
+<div class="wp-block-button glaser-toggle-light-dark"><a class="wp-block-button__link has-text-align-center wp-element-button" title="Toggle theme between Light and Dark modes." rel=""><?php esc_html_e('Toggle Brightness', 'glaser');?></a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons --></div>
 <!-- /wp:group -->
