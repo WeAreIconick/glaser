@@ -76,10 +76,7 @@ echo sprintf( esc_html__( '1132 Anystreet Blvd%1$sNew York, 12256', 'glaser' ), 
 <!-- wp:social-link {"service":"facebook"} /--></ul>
 <!-- /wp:social-links -->
 
-<!-- wp:paragraph {"align":"center","fontSize":"small"} -->
-<p class="has-text-align-center has-small-font-size">
-	Powered by <a href="https://wordpress.org" rel="nofollow">WordPress</a></p>
-<!-- /wp:paragraph -->
+<!-- wp:pattern {"slug":"glaser/colophon"} /-->
 
 <!-- wp:buttons -->
 <div class="wp-block-buttons"><!-- wp:button {"textAlign":"center","className":"glaser-toggle-light-dark"} -->
