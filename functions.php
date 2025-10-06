@@ -78,6 +78,15 @@ function enqueue_block_editor_assets() {
 		$asset_file['version'],
 		true
 	);
+
+	$asset_file = require \get_theme_file_path( '/build/block-variation-badge.asset.php' );
+	wp_enqueue_script(
+		'block-variation-badge',
+		\get_theme_file_uri( 'build/block-variation-badge.js' ),
+		$asset_file['dependencies'],
+		$asset_file['version'],
+		true
+	);
 }
 \add_action( 'enqueue_block_editor_assets', __NAMESPACE__ . '\enqueue_block_editor_assets' );
 
@@ -121,3 +130,33 @@ function set_color_scheme() {
 	<?php
 }
 add_action( 'wp_head', __NAMESPACE__ . '\set_color_scheme' );
+
+
+/**
+ * Add in our custom attributes to supported blocks.
+ */
+function register_block_type_args( $args, $block_type ) {
+	if ( in_array( $block_type, array( 'core/verse' ) ) ) {
+		if ( ! isset( $args['attributes'] ) ) {
+            $args['attributes'] = array();
+        }
+		$args['attributes']['label'] = array(
+			'type'    => 'string',
+			'default' => __( 'Badge Text Here', 'glaser' ),
+		);
+		$args['attributes']['qty'] = array(
+			'type'    => 'number',
+			'default' => 2,
+		);
+		$args['attributes']['spacer'] = array(
+            'type'    => 'string',
+			'default' => '·',
+        );
+		$args['attributes']['width'] = array(
+            'type'    => 'string',
+			'default' => '100px',
+        );
+	}
+	return $args;
+}
+add_filter( 'register_block_type_args', __NAMESPACE__ . '\register_block_type_args', 10, 2 );

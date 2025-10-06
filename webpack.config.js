@@ -7,5 +7,6 @@ module.exports = {
 		'block-editor': './src/block-editor.jsx',
 		'front-end': './src/front-end.jsx',
 		'button-variation-light-dark': './src/button-variation-light-dark.jsx',
+		'block-variation-badge': './src/block-variation-badge.jsx',
 	},
 };
