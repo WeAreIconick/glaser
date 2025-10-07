@@ -6,7 +6,7 @@ import { View } from '@wordpress/primitives';
 import {
 	useBlockProps,
 	useSettings,
-    getSpacingPresetCssVar,
+	getSpacingPresetCssVar,
 	InspectorControls,
 	isValueSpacingPreset,
 	__experimentalSpacingSizesControl as SpacingSizesControl,
@@ -38,12 +38,13 @@ domReady(() => {
 			],
 			icon: "info-outline",
 			attributes: {
+				type: 'badge',
 				label: __( 'Badge Text Here', 'glaser' ),
 				qty: 2,
 				spacer: '·',
 				width: '200px',
 			},
-			isActive: [ 'label' ]
+			isActive: [ 'type' ]
 		}
 	);
 });
@@ -63,22 +64,22 @@ function addBadgeAttributes( settings, name ) {
 	if ( 'core/verse' === name ) {
 		settings.attributes = {
 			...settings.attributes,
-            label: {
-                type: 'string',
-				default: __( 'Badge Text Here', 'glaser' ),
-            },
-            qty: {
-                type: 'number',
-                default: 2,
-            },
-            spacer: {
-                type: 'string',
-                default: '·',
-            },
-            width: {
-                type: 'string',
-                default: '200px',
-            },
+			type: {
+				type: 'string',
+				default: 'verse',
+			},
+			label: {
+				type: 'string',
+			},
+			qty: {
+				type: 'number',
+			},
+			spacer: {
+				type: 'string',
+			},
+			width: {
+				type: 'string',
+			},
 		};
 	}
 
@@ -92,35 +93,35 @@ addFilter(
 );
 
 function DimensionInput({ label, onChange, value = '' }) {
-    const [spacingUnits] = useSettings('spacing.units');
+	const [spacingUnits] = useSettings('spacing.units');
 
-    const units = useCustomUnits({
-        spacingUnits,
-        defaultValues: { px: 200, em: 20, rem: 20, vw: 20 },
-    });
+	const units = useCustomUnits({
+		spacingUnits,
+		defaultValues: { px: 200, em: 20, rem: 20, vw: 20 },
+	});
 
-    const [parsedQuantity, parsedUnit] =
-        parseQuantityAndUnitFromRawValue(value);
-    const computedValue = isValueSpacingPreset(value)
-        ? value
-        : [parsedQuantity, parsedUnit].join('');
+	const [parsedQuantity, parsedUnit] =
+		parseQuantityAndUnitFromRawValue(value);
+	const computedValue = isValueSpacingPreset(value)
+		? value
+		: [parsedQuantity, parsedUnit].join('');
 
-    return (
-        <View className="tools-panel-item-spacing">
-            <SpacingSizesControl
-                values={{ all: computedValue }}
-                onChange={({ all }) => {
-                    onChange(all);
-                }}
-                label={label}
-                sides={['all']}
-                units={units}
-                allowReset={false}
-                splitOnAxis={false}
-                showSideInLabel={false}
-            />
-        </View>
-    );
+	return (
+		<View className="tools-panel-item-spacing">
+			<SpacingSizesControl
+				values={{ all: computedValue }}
+				onChange={({ all }) => {
+					onChange(all);
+				}}
+				label={label}
+				sides={['all']}
+				units={units}
+				allowReset={false}
+				splitOnAxis={false}
+				showSideInLabel={false}
+			/>
+		</View>
+	);
 }
 
 function addBadgeInspectorControls( BlockEdit ) {
@@ -132,113 +133,119 @@ function addBadgeInspectorControls( BlockEdit ) {
 			return <BlockEdit { ...props } />;
 		}
 
+		console.log( props );
+
 		// Retrieve selected attributes from the block.
 		const {
+			type,
 			label,
-            qty,
-            spacer,
-            width,
+			qty,
+			spacer,
+			width,
 		} = attributes;
-
-        // TODO: Add conditional so it only applies for this variant.
 
 		return (
 			<>
-                <figure {...useBlockProps({ style: { width } })}>
-                    <svg
-                        className="transform-origin-center-center"
-                        viewBox="0 0 100 100"
-                        overflow="visible"
-                    >
-                        <path
-                            id="curve"
-                            d="M 0 50 L 0 50 A 1 1 0 0 1 100 50 L 100 50 L 100 50 A 1 1 0 0 1 0 50 L 0 50"
-                            strokeWidth="none"
-                            fill="transparent"
-                        ></path>
-                        <text>
-                            <textPath
-                                href="#curve"
-                                startOffset="0"
-                                dominantBaseline="Hanging"
-                            >
-                                {`${label} ${spacer} `.repeat(qty)}
-                            </textPath>
-                        </text>
-                    </svg>
-                </figure>
-				<InspectorControls>
-					<PanelBody
-						title={ __(
-							'Badge Details',
-							'glaser'
-						) }
-					>
-                        <PanelRow>
-                            <TextControl
-                                label={__('Text Label')}
-                                value={label}
-                                onChange={(val) => setAttributes({ label: val })}
-                                __nextHasNoMarginBottom
-                                __next40pxDefaultSize
-                            />
-                        </PanelRow>
-                        <PanelRow>
-                            <NumberControl
-                                label={__('Times')}
-                                value={qty}
-                                min={1}
-                                max={10}
-                                onChange={(value) =>
-                                    setAttributes({
-                                        qty: parseInt(value, 10),
-                                    })
-                                }
-                                __next40pxDefaultSize
-                            />
-                        </PanelRow>
-                        <PanelRow>
-                            <SelectControl
-                                label={__('Spacer')}
-                                value={spacer}
-                                options={[
-                                    {
-                                        label: __('None'),
-                                        value: '',
-                                    },
-                                    {
-                                        label: '·',
-                                        value: '·',
-                                    },
-                                    {
-                                        label: '+',
-                                        value: '+',
-                                    },
-                                    {
-                                        label: '-',
-                                        value: '-',
-                                    },
-                                ]}
-                                onChange={(value) =>
-                                    setAttributes({
-                                        spacer: value,
-                                    })
-                                }
-                                __nextHasNoMarginBottom
-                                __next40pxDefaultSize
-                            />
-                        </PanelRow>
-                        <PanelRow>
-                            <DimensionInput
-                                label={__('Size')}
-                                value={width}
-                                onChange={(nextWidth) =>
-                                    setAttributes({ width: nextWidth })
-                                }
-                            />
-                        </PanelRow>
-					</PanelBody>
-				</InspectorControls>
+				{ ( 'badge' !== type ) && <BlockEdit { ...props } /> }
+				{ ( 'badge' === type ) &&
+					<>
+						<figure {...useBlockProps({ style: { width, animation: 'none' }, className: 'badge' })}>
+							<svg
+								className="transform-origin-center-center"
+								viewBox="0 0 100 100"
+								overflow="visible"
+							>
+								<path
+									id="curve"
+									d="M 0 50 L 0 50 A 1 1 0 0 1 100 50 L 100 50 L 100 50 A 1 1 0 0 1 0 50 L 0 50"
+									strokeWidth="none"
+									fill="transparent"
+								></path>
+								<text>
+									<textPath
+										href="#curve"
+										startOffset="0"
+										dominantBaseline="Hanging"
+									>
+										{`${label} ${spacer} `.repeat(qty)}
+									</textPath>
+								</text>
+							</svg>
+						</figure>
+						<InspectorControls>
+							<PanelBody
+								title={ __(
+									'Badge Details',
+									'glaser'
+								) }
+							>
+								<PanelRow>
+									<TextControl
+										label={__('Text Label')}
+										value={label}
+										onChange={(val) => setAttributes({ label: val })}
+										__nextHasNoMarginBottom
+										__next40pxDefaultSize
+									/>
+								</PanelRow>
+								<PanelRow>
+									<NumberControl
+										label={__('Times')}
+										value={qty}
+										min={1}
+										max={10}
+										onChange={(value) =>
+											setAttributes({
+												qty: parseInt(value, 10),
+											})
+										}
+										__next40pxDefaultSize
+									/>
+								</PanelRow>
+								<PanelRow>
+									<SelectControl
+										label={__('Spacer')}
+										value={spacer}
+										options={[
+											{
+												label: __('None'),
+												value: '',
+											},
+											{
+												label: '·',
+												value: '·',
+											},
+											{
+												label: '+',
+												value: '+',
+											},
+											{
+												label: '-',
+												value: '-',
+											},
+										]}
+										onChange={(value) =>
+											setAttributes({
+												spacer: value,
+											})
+										}
+										__nextHasNoMarginBottom
+										__next40pxDefaultSize
+									/>
+								</PanelRow>
+								<PanelRow>
+									<DimensionInput
+										label={__('Size')}
+										value={width}
+										onChange={(nextWidth) =>
+											setAttributes({ width: nextWidth })
+										}
+									/>
+								</PanelRow>
+							</PanelBody>
+						</InspectorControls>
+					</>
+				}
 			</>
 		);
 	};
@@ -251,58 +258,62 @@ addFilter(
 );
 
 function replaceBadgeMarkup( element, blockType, attributes ) {
-    // Skip if element is undefined.
-    if ( ! element ) {
-        return;
-    }
+	// Skip if element is undefined.
+	if ( ! element ) {
+		return;
+	}
 
-    // Only apply to Cover blocks.
-    if ( blockType.name !== 'core/verse' ) {
-        return element;
-    }
+	// Only apply to Cover blocks.
+	if ( blockType.name !== 'core/verse' ) {
+		return element;
+	}
 
-    // TODO: Add conditional so it only applies for this variant.
+	const {
+		type,
+		label,
+		qty,
+		spacer,
+		width,
+	} = attributes;
 
-    const {
-        label,
-        qty,
-        spacer,
-        width,
-    } = attributes;
+	if ( 'badge' !== type ) {
+		return element;
+	}
 
-    return <figure
-        {...useBlockProps.save({
-            style: {
-                width: getSpacingPresetCssVar(width),
-            },
-        })}
-    >
-        <svg
-            className="transform-origin-center-center"
-            viewBox="0 0 100 100"
-            overflow="visible"
-        >
-            <path
-                id="curve"
-                d="M 0 50 L 0 50 A 1 1 0 0 1 100 50 L 100 50 L 100 50 A 1 1 0 0 1 0 50 L 0 50"
-                strokeWidth="none"
-                fill="transparent"
-            ></path>
-            <text>
-                <textPath
-                    href="#curve"
-                    startOffset="0"
-                    dominantBaseline="Hanging"
-                >
-                    {`${label} ${spacer} `.repeat(qty)}
-                </textPath>
-            </text>
-        </svg>
-    </figure>;
+	return <figure
+		{...useBlockProps.save({
+			style: {
+				width: getSpacingPresetCssVar(width),
+			},
+			className: 'badge',
+		})}
+	>
+		<svg
+			className="transform-origin-center-center"
+			viewBox="0 0 100 100"
+			overflow="visible"
+		>
+			<path
+				id="curve"
+				d="M 0 50 L 0 50 A 1 1 0 0 1 100 50 L 100 50 L 100 50 A 1 1 0 0 1 0 50 L 0 50"
+				strokeWidth="none"
+				fill="transparent"
+			></path>
+			<text>
+				<textPath
+					href="#curve"
+					startOffset="0"
+					dominantBaseline="Hanging"
+				>
+					{`${label} ${spacer} `.repeat(qty)}
+				</textPath>
+			</text>
+		</svg>
+	</figure>;
 }
 
 addFilter(
-    'blocks.getSaveElement',
-    'glaser/badge/get-replaced-markup',
-    replaceBadgeMarkup
+	'blocks.getSaveElement',
+	'glaser/badge/get-replaced-markup',
+	replaceBadgeMarkup
 );

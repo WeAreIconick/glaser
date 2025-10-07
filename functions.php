@@ -140,21 +140,21 @@ function register_block_type_args( $args, $block_type ) {
 		if ( ! isset( $args['attributes'] ) ) {
             $args['attributes'] = array();
         }
+		$args['attributes']['type'] = array(
+			'type'    => 'string',
+			'default' => 'verse',
+		);
 		$args['attributes']['label'] = array(
 			'type'    => 'string',
-			'default' => __( 'Badge Text Here', 'glaser' ),
 		);
 		$args['attributes']['qty'] = array(
 			'type'    => 'number',
-			'default' => 2,
 		);
 		$args['attributes']['spacer'] = array(
             'type'    => 'string',
-			'default' => '·',
         );
 		$args['attributes']['width'] = array(
             'type'    => 'string',
-			'default' => '100px',
         );
 	}
 	return $args;

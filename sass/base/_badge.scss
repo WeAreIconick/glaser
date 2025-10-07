@@ -1,0 +1,25 @@
+@keyframes badge-spin {
+    100% {
+        transform:rotate(360deg);
+    }
+}
+
+:where(.wp-block-verse.badge) {
+	aspect-ratio: 1;
+	box-sizing: border-box;
+	border-radius: 50%;
+	pointer-events: none;
+	animation: badge-spin 60s linear infinite;
+
+	svg {
+		width: 100%;
+		aspect-ratio: 1;
+		inset: 0px;
+		transform-origin: center center;
+		will-change: transform;
+
+		text textpath {
+			fill: var(--wp--preset--color--primary, #000);
+		}
+	}
+}
