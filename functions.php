@@ -115,7 +115,7 @@ function set_color_scheme() {
 	<script id="glaser-set-color-scheme">
 	const colorScheme = localStorage.getItem('colorScheme');
 	if ( colorScheme ) {
-		document.documentElement.dataset.colorScheme = scheme;
+		document.documentElement.dataset.colorScheme = colorScheme;
 	}
 	</script>
 	<?php

@@ -41,7 +41,7 @@ lightDarkToggles.forEach((element) => {
 			setScheme('dark');
 		}
 	});
-    element.removeChild();
+    element.querySelector('.wp-element-button').innerText = '';
 });
 
 // Set the html data attribute for easy reference and css.
