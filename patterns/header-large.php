@@ -9,12 +9,14 @@
  */
 ?>
 <!-- wp:group {"align":"full","className":"header-grid","style":{"border":{"width":"1px"},"spacing":{"blockGap":"0"}},"layout":{"type":"grid","columnCount":7,"minimumColumnWidth":null}} -->
-<div class="wp-block-group alignfull header-grid" style="border-width:1px"><!-- wp:site-title {"style":{"layout":{"columnSpan":3},"spacing":{"padding":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|50","left":"var:preset|spacing|50","right":"var:preset|spacing|50"}},"typography":{"textTransform":"uppercase"},"elements":{"link":{"color":{"text":"var:preset|color|primary"}}}},"textColor":"primary"} /-->
+<div class="wp-block-group alignfull header-grid" style="border-width:1px"><!-- wp:group {"style":{"layout":{"columnSpan":3}},"layout":{"type":"flex","orientation":"vertical","verticalAlignment":"center"}} -->
+<div class="wp-block-group"><!-- wp:site-title {"style":{"layout":{"columnSpan":3},"spacing":{"padding":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|50","left":"var:preset|spacing|50","right":"var:preset|spacing|50"}},"typography":{"textTransform":"uppercase"},"elements":{"link":{"color":{"text":"var:preset|color|primary"}}}},"textColor":"primary"} /--></div>
+<!-- /wp:group -->
 
 <!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|50","left":"var:preset|spacing|50","right":"10rem"}},"layout":{"columnSpan":3}},"layout":{"type":"flex","flexWrap":"nowrap"}} -->
-<div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--50);padding-right:10rem;padding-bottom:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--50)"><!-- wp:glaser/badge {"label":"Made In NY","qty":3,"style":{"typography":{"textTransform":"uppercase","letterSpacing":"3px","fontSize":"0.6rem","fontWeight":"400","fontStyle":"normal"},"border":{"width":"1px"},"spacing":{"padding":{"top":"var:preset|spacing|30","bottom":"var:preset|spacing|30","left":"var:preset|spacing|30","right":"var:preset|spacing|30"}}}} -->
-<figure style="border-width:1px;padding-top:var(--wp--preset--spacing--30);padding-right:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--30);padding-left:var(--wp--preset--spacing--30);font-size:0.6rem;font-style:normal;font-weight:400;letter-spacing:3px;text-transform:uppercase;width:100px" class="wp-block-glaser-badge"><svg class="transform-origin-center-center" viewBox="0 0 100 100" overflow="visible"><path id="curve" d="M 0 50 L 0 50 A 1 1 0 0 1 100 50 L 100 50 L 100 50 A 1 1 0 0 1 0 50 L 0 50" stroke-width="none" fill="transparent"></path><text><textPath href="#curve" startOffset="0" dominant-baseline="Hanging">Made In NY · Made In NY · Made In NY · </textPath></text></svg></figure>
-<!-- /wp:glaser/badge -->
+<div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--50);padding-right:10rem;padding-bottom:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--50)"><!-- wp:verse {"type":"badge","label":"cool text ❤️","qty":3,"spacer":"","width":"140px"} -->
+<figure style="width:140px" class="wp-block-verse badge"><svg class="transform-origin-center-center" viewBox="0 0 100 100" overflow="visible"><path id="curve" d="M 0 50 L 0 50 A 1 1 0 0 1 100 50 L 100 50 L 100 50 A 1 1 0 0 1 0 50 L 0 50" stroke-width="none" fill="transparent"></path><text><textPath href="#curve" startOffset="0" dominant-baseline="Hanging">cool text ❤️  cool text ❤️  cool text ❤️  </textPath></text></svg></figure>
+<!-- /wp:verse -->
 
 <!-- wp:paragraph -->
 <p><?php esc_html_e('We’re architects of distinct visual identities -- Crafting unique brands that stand out from the noise.', 'glaser');?></p>
